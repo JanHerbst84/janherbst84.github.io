@@ -87,12 +87,30 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-h1 { font-size: var(--font-scale-xxxl); }
-h2 { font-size: var(--font-scale-xxl); }
-h3 { font-size: var(--font-scale-xl); }
-h4 { font-size: var(--font-scale-large); }
-h5 { font-size: var(--font-scale-medium); font-weight: 600; }
-h6 { font-size: var(--font-scale-medium); }
+h1 { 
+  font-size: var(--font-scale-xxxl); 
+}
+
+h2 { 
+  font-size: var(--font-scale-xxl); 
+}
+
+h3 { 
+  font-size: var(--font-scale-xl); 
+}
+
+h4 { 
+  font-size: var(--font-scale-large); 
+}
+
+h5 { 
+  font-size: var(--font-scale-medium); 
+  font-weight: 600; 
+}
+
+h6 { 
+  font-size: var(--font-scale-medium); 
+}
 
 p {
   margin-bottom: var(--spacing-medium);
@@ -130,7 +148,9 @@ header h3,
   font-size: var(--font-scale-small);
 }
 
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 /* Container */
 #container {
@@ -217,7 +237,6 @@ Navigation
   display: none;
 }
 
-
 /*----------------------------------------------------------------------------
 Home 
 ----------------------------------------------------------------------------*/
@@ -265,14 +284,13 @@ Home
 
 #hero p {
   margin: var(--spacing-large) var(--spacing-medium) 0 var(--spacing-medium);
-  text-align: left; /* Changed from justify to left */
-  font-family: var(--font-body); /* Changed from Georgia, serif to your sans-serif variable */
+  text-align: left;
+  font-family: var(--font-body);
   font-size: var(--font-scale-large);
   opacity: 0.5;
   transition: opacity 1s ease-in-out;
 }
 
-/* Keep the hover effect */
 .hero:hover p {
   opacity: 1;
 }
@@ -1097,7 +1115,6 @@ Media Queries
   }
 }
 
-
 /* Contact form specific styles */
 .captcha-container {
   margin-bottom: 20px;
@@ -1237,4 +1254,33 @@ Media Queries
   .button-container {
     flex-direction: column;
   }
+}
+
+/* Target specifically the paragraphs inside hero-text */
+.hero-text p {
+  text-align: left;
+  font-family: inherit;
+  font-size: var(--font-scale-large);
+  opacity: 0.5;
+  transition: opacity 1s ease-in-out;
+  color: var(--text-color);
+}
+
+/* Make text visible on hover */
+.hero:hover .hero-text p {
+  opacity: 1;
+}
+
+/* This ensures all paragraphs within the hero get the opacity effect */
+#hero p, 
+.hero p,
+.hero-content p {
+  opacity: 0.5;
+  transition: opacity 1s ease-in-out;
+}
+
+#hero:hover p, 
+.hero:hover p,
+.hero-content:hover p {
+  opacity: 1;
 }
