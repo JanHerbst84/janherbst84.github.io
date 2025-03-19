@@ -1,0 +1,208 @@
+/*----------------------------------------------------------------------------
+Home 
+----------------------------------------------------------------------------*/
+#hero {
+  display: flex;
+  flex-wrap: wrap;
+  margin: clamp(var(--spacing-xl), 5vw, var(--spacing-xxxl)) var(--spacing-medium);
+}
+
+.hero {
+  box-shadow: var(--box-shadow);
+  background-color: var(--background-light);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.ftext {
+  width: 60%;
+  height: auto;
+}
+
+.hero-text {
+  font-family: 'Open Sans', Arial, sans-serif; /* Sans-serif font */
+}
+
+.hero-text p {
+  text-align: left; /* Remove justification */
+  font-family: inherit; /* Ensure paragraphs inherit the sans-serif font */
+}
+
+.hero img {
+  width: 30%;
+  height: auto;
+  float: right;
+  margin: var(--spacing-large) var(--spacing-medium) var(--spacing-xxl) var(--spacing-medium);
+  border-radius: 2%;
+  box-shadow: var(--box-shadow-small);
+  opacity: 0.5;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero:hover img {
+  opacity: 1;
+}
+
+#hero p {
+  margin: var(--spacing-large) var(--spacing-medium) 0 var(--spacing-medium);
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: var(--font-scale-large);
+  opacity: 0.5;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero:hover p {
+  opacity: 1;
+}
+
+#hero .cmi {
+  position: relative;
+  width: clamp(120px, 15vw, 200px);
+  height: auto;
+  margin-top: var(--spacing-medium);
+  margin-left: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
+}
+
+.cmi img {
+  float: left;
+  box-shadow: var(--box-shadow-small);
+  width: clamp(80px, 12vw, 150px);
+  height: auto;
+}
+
+/* News & Updates Section */
+#news-updates {
+  background-color: var(--background-lighter);
+  padding: var(--spacing-xl) 0;
+  margin-top: var(--spacing-xl);
+}
+
+#news-updates .container {
+  width: min(80%, 1200px);
+  margin: 0 auto;
+  text-align: left;
+}
+
+#news-updates h2 {
+  color: var(--primary-blue-dark);
+  text-align: center;
+  margin-bottom: var(--spacing-large);
+}
+
+.news-item {
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--spacing-medium) 0;
+  margin-bottom: var(--spacing-medium);
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-item h3 {
+  color: var(--secondary-blue);
+  margin-bottom: var(--spacing-small);
+}
+
+.news-item time {
+  display: block;
+  color: var(--text-light);
+  font-size: var(--font-scale-small);
+  margin-bottom: var(--spacing-small);
+}
+
+.news-item p {
+  line-height: 1.6;
+  margin-bottom: var(--spacing-small);
+}
+
+.news-item .read-more {
+  text-decoration: none;
+  color: var(--primary-blue-dark);
+  font-weight: bold;
+  transition: var(--transition-standard);
+}
+
+.news-item .read-more:hover {
+  color: var(--secondary-blue-dark);
+}
+
+.news-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: var(--spacing-medium);
+  margin: var(--spacing-medium) 0;
+}
+
+.news-flex img {
+  width: 30%;
+  max-width: 200px;
+  max-height: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.news-flex .news-text {
+  flex: 1;
+  margin: 0;
+  text-align: left;
+}
+
+.news-detail,
+.news-detail h2,
+.news-detail h3,
+.news-detail p,
+.news-detail time {
+  color: var(--text-color);
+}
+
+.news-archive-link {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+}
+
+.news-archive-link a {
+  background-color: var(--primary-blue-dark);
+  color: var(--white);
+  padding: var(--spacing-small) var(--spacing-medium);
+  text-decoration: none;
+  font-size: var(--font-scale-medium);
+  border-radius: var(--border-radius);
+  transition: var(--transition-standard);
+}
+
+.news-archive-link a:hover {
+  background-color: var(--secondary-blue-dark);
+}
+
+/* Target specifically the paragraphs inside hero-text */
+.hero-text p {
+  text-align: left;
+  font-family: inherit;
+  font-size: var(--font-scale-large);
+  opacity: 0.5;
+  transition: opacity 1s ease-in-out;
+  color: var(--text-color);
+}
+
+/* Make text visible on hover */
+.hero:hover .hero-text p {
+  opacity: 1;
+}
+
+/* This ensures all paragraphs within the hero get the opacity effect */
+#hero p, 
+.hero p,
+.hero-content p {
+  opacity: 0.5;
+  transition: opacity 1s ease-in-out;
+}
+
+#hero:hover p, 
+.hero:hover p,
+.hero-content:hover p {
+  opacity: 1;
+}

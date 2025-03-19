@@ -1,0 +1,78 @@
+/*----------------------------------------------------------------------------
+Research
+----------------------------------------------------------------------------*/
+ul.focus {
+  list-style-image: url("../images/focus.png");
+}
+
+.focus ul li {
+  padding: var(--spacing-small) 0;
+}
+
+.accordion {
+  background-color: var(--background-light);
+  color: var(--secondary-blue);
+  cursor: pointer;
+  padding: var(--spacing-medium);
+  width: 98%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: var(--font-scale-medium);
+  transition: 0.4s;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.active, .accordion:hover {
+  background-color: #ddd; 
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  margin-bottom: 10px;
+}
+
+.panel.show {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.resCont {
+  margin-bottom: var(--spacing-medium);
+}
+
+.resCont img {
+  float: right;
+  margin-bottom: var(--spacing-medium);
+  max-width: min(200px, 30%);
+}
+
+.resCont p {
+  text-align: justify;
+}
+
+.resList ul {
+  list-style-type: none;
+  margin-bottom: var(--spacing-medium);
+  padding: 0;
+}
+
+.resList li {
+  border-bottom: 2px dotted var(--primary-blue);
+  padding: var(--spacing-small) 0;
+}
+
+.resList li:last-child {
+  border-bottom: none;
+}
+
+.arrow_Up {
+  float: right;
+  margin-bottom: var(--spacing-small);
+  width: clamp(15px, 2vw, 25px);
+}

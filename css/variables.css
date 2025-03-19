@@ -1,0 +1,64 @@
+/* CSS Variables for consistent theming */
+:root {
+  /* Color palette */
+  --primary-blue: #2196f3;
+  --primary-blue-light: #5bccf6;
+  --primary-blue-dark: #1976d2;
+  --secondary-blue: #154785;
+  --secondary-blue-dark: #0D47A1;
+  --text-color: #444444;
+  --text-light: #888888;
+  --background-light: #f2f2f2;
+  --background-lighter: #f9f9f9;
+  --white: #ffffff;
+  --border-color: #dddddd;
+  
+  /* Spacing variables */
+  --spacing-xs: 0.25rem;    /* 4px */
+  --spacing-small: 0.5rem;  /* 8px */
+  --spacing-medium: 1rem;   /* 16px */
+  --spacing-large: 1.5rem;  /* 24px */
+  --spacing-xl: 2rem;       /* 32px */
+  --spacing-xxl: 3rem;      /* 48px */
+  --spacing-xxxl: 5rem;     /* 80px */
+  
+  /* Fixed font sizes (keeping for backward compatibility) */
+  --font-xs: 0.75rem;       /* 12px */
+  --font-small: 0.875rem;   /* 14px */
+  --font-medium: 1rem;      /* 16px */
+  --font-large: 1.25rem;    /* 20px */
+  --font-xl: 1.5rem;        /* 24px */
+  --font-xxl: 2rem;         /* 32px */
+  --font-xxxl: 2.25rem;     /* 36px */
+  
+  /* Viewport-aware font sizes */
+  --font-scale-xs: calc(0.75rem + 0vw);
+  --font-scale-small: calc(0.875rem + 0.1vw);
+  --font-scale-medium: calc(1rem + 0.2vw);
+  --font-scale-large: calc(1.1rem + 0.3vw);
+  --font-scale-xl: calc(1.2rem + 0.6vw);
+  --font-scale-xxl: calc(1.25rem + 1vw);
+  --font-scale-xxxl: calc(1.5rem + 1.5vw);
+  
+  /* Font families */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Open Sans', sans-serif;
+  
+  /* Container widths - more responsive now */
+  --container-width: min(60%, 1400px);
+  --container-width-large: min(80%, 1600px);
+  --container-width-small: min(90%, 1200px);
+  
+  /* Border radius */
+  --border-radius: 4px;
+  
+  /* Shadow */
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  --box-shadow-small: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  
+  /* Transitions */
+  --transition-standard: all 0.3s ease;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap');

@@ -1,0 +1,62 @@
+/* Typography styles */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin-top: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
+  line-height: 1.2;
+}
+
+h1 { 
+  font-size: var(--font-scale-xxxl); 
+}
+
+h2 { 
+  font-size: var(--font-scale-xxl); 
+}
+
+h3 { 
+  font-size: var(--font-scale-xl); 
+}
+
+h4 { 
+  font-size: var(--font-scale-large); 
+}
+
+h5 { 
+  font-size: var(--font-scale-medium); 
+  font-weight: 600; 
+}
+
+h6 { 
+  font-size: var(--font-scale-medium); 
+}
+
+p {
+  margin-bottom: var(--spacing-medium);
+  line-height: 1.6;
+}
+
+/* Override text color in header and footer */
+header h3,
+.footer h3 {
+  color: var(--white) !important;
+}
+
+/* Heading color utility class */
+.headingcolour {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+/* Increase the section heading size */
+.w3-text-blue[style="font-size: 20px;"] {
+  font-size: var(--font-scale-xl) !important;
+  font-weight: 600;
+  margin-bottom: var(--spacing-medium);
+}
+
+/* Slightly reduce the project title size for better proportion */
+.w3-panel.w3-leftbar.w3-border-blue h3 {
+  font-size: var(--font-scale-large);
+}

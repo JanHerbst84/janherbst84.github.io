@@ -1,0 +1,206 @@
+/*----------------------------------------------------------------------------
+PUBLICATIONS
+----------------------------------------------------------------------------*/
+.publication ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.publication li {
+  border-bottom: 2px dotted var(--primary-blue);
+  padding: var(--spacing-small) 0;
+}
+
+.publication li:last-child {
+  border-bottom: none;
+}
+
+.publication p {
+  color: var(--primary-blue);
+}
+
+.review h6 {
+  color: var(--primary-blue);
+}
+
+/*--------------------------------------------------------------
+   Flexbox Carousel/Gallery Styles - FIXED FOR BOOK COVERS
+--------------------------------------------------------------*/
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 1rem;
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+  max-width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-blue) var(--background-light);
+}
+
+.carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: var(--background-light);
+  border-radius: 4px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: var(--primary-blue);
+  border-radius: 4px;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: clamp(120px, 15vw, 180px);
+  min-width: clamp(120px, 15vw, 180px);
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: clamp(160px, 25vw, 250px);
+  object-fit: contain;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.carousel-item .text {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.carousel-item .text p {
+  margin: 5px 0;
+  font-size: clamp(12px, 1.1vw, 14px);
+}
+
+.carousel-item .text a {
+  text-decoration: none;
+  color: var(--primary-blue);
+  font-size: clamp(10px, 1vw, 12px);
+}
+
+/* Carousel navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  color: var(--secondary-blue);
+  border: none;
+  border-radius: 50%;
+  width: clamp(30px, 4vw, 40px);
+  height: clamp(30px, 4vw, 40px);
+  font-size: clamp(16px, 2.5vw, 20px);
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--primary-blue);
+}
+
+/*----------------------------------------------------------------------------
+PlumX Widget Styling - THIS SECTION IS CRUCIAL FOR PLUMX COMPATIBILITY
+----------------------------------------------------------------------------*/
+.publication-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.publication-text {
+  flex: 1;
+}
+
+.publication-widgets {
+  min-width: 100px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 10;
+}
+
+.publication-widgets a,
+.publication-widgets a:hover {
+  transform: none !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* Ensure the PlumX widget displays correctly */
+.plumx-plum-print-popup,
+.plumx-plum-print-popup-wrapper,
+.plumx-plum-print-popup-container {
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+/* Prevent hover effects from disrupting the widget */
+.publication-widgets * {
+  transition: none !important;
+}
+
+/* Export Options */
+.export-options {
+  margin-top: var(--spacing-xxl);
+  padding: var(--spacing-medium);
+  background-color: var(--background-lighter);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-small);
+}
+
+.export-options h3 {
+  color: var(--secondary-blue);
+  margin-bottom: var(--spacing-small);
+}
+
+.export-options p {
+  margin-bottom: var(--spacing-medium);
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-small);
+}
+
+.button-container button {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: var(--spacing-small) var(--spacing-medium);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition-standard);
+}
+
+.button-container button:hover {
+  background-color: var(--secondary-blue);
+}

@@ -1,0 +1,51 @@
+/* Base styles */
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  font-size: var(--font-scale-medium);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Ensure all images are responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Box sizing for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Links and buttons */
+a, button {
+  transition: var(--transition-standard);
+}
+
+a:hover {
+  color: var(--primary-blue);
+  transform: scale(1.05);
+}
+
+button:hover {
+  background-color: var(--secondary-blue-dark);
+  transform: scale(1.05);
+}
+
+button {
+  margin: var(--spacing-small);
+  padding: var(--spacing-xs);
+  background-color: var(--white);
+  color: var(--secondary-blue);
+  font-weight: 600;
+  vertical-align: middle;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+}
+
+button:hover {
+  color: cornflowerblue;
+}

@@ -1,0 +1,27 @@
+/* Main CSS file that imports all component stylesheets */
+
+/* Import variables and base styles */
+@import 'variables.css';
+@import 'base.css';
+@import 'typography.css';
+@import 'layout.css';
+
+/* Import layout components */
+@import 'header.css';
+@import 'navigation.css';
+@import 'footer.css';
+
+/* Import page-specific styles */
+@import 'home.css';
+@import 'research.css';
+@import 'publications.css';
+@import 'cv.css';
+@import 'contact.css';
+@import 'lectures.css';
+@import 'media.css';
+
+/* Import components and utilities */
+@import 'components.css';
+
+/* Import responsive styles (should be last to override previous styles) */
+@import 'responsive.css';

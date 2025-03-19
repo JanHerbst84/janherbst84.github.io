@@ -1,0 +1,86 @@
+/* Layout styles */
+
+/* Container */
+#container {
+  width: var(--container-width);
+  margin: 0 auto;
+  padding: clamp(var(--spacing-xl), 5vw, var(--spacing-xxxl)) var(--spacing-medium);
+}
+
+/* Section spacing */
+section {
+  margin: var(--spacing-xl) 0;
+  padding: var(--spacing-medium) 0;
+}
+
+/* Container links */
+#container a {
+  color: var(--secondary-blue);
+  text-decoration: none;
+  font-weight: 550;
+  font-size: var(--font-scale-medium);
+}
+
+#container a:hover {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+/* Utility classes for layout */
+.w3-clear {
+  clear: right; 
+}
+
+/* Flex layouts */
+.flex-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-home img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+/* Flex box for footer */
+#footer .flex-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Column layout */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: var(--spacing-large) clamp(var(--spacing-medium), 5vw, var(--spacing-xxxl));
+  text-align: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Div container with max width */
+#div-container {
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+
+/* Up arrow positioning */
+.up-arrow {
+  position: relative;
+  float: right;
+  margin-right: clamp(var(--spacing-medium), 5vw, var(--spacing-xxl));
+}
+
+.up-arrow:hover {
+  font-size: 60px;
+  box-shadow: inset 26px 0 0 0 var(--primary-blue);
+}

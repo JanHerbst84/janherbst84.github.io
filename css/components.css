@@ -1,0 +1,119 @@
+/*--------------------------------------------------------------
+# Reusable Components
+--------------------------------------------------------------*/
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-blue);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--primary-blue-dark);
+}
+
+/* Accordion */
+.accordion {
+  background-color: var(--background-light);
+  color: var(--secondary-blue);
+  cursor: pointer;
+  padding: var(--spacing-medium);
+  width: 98%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: var(--font-scale-medium);
+  transition: 0.4s;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.active, .accordion:hover {
+  background-color: #ddd; 
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  margin-bottom: 10px;
+}
+
+.panel.show {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Cards */
+.card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-small);
+  padding: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
+}
+
+.card-title {
+  color: var(--secondary-blue);
+  margin-top: 0;
+  margin-bottom: var(--spacing-small);
+}
+
+.card-content {
+  margin-bottom: var(--spacing-small);
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+/* Alerts */
+.alert {
+  padding: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}

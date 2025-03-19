@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# Videos
+--------------------------------------------------------------*/
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--spacing-medium);
+}
+
+.video {
+  width: calc(50% - var(--spacing-small));
+  min-width: 280px;
+  flex-grow: 1;
+  margin-bottom: var(--spacing-medium);
+}
+
+.video iframe {
+  aspect-ratio: 16/9;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-small);
+}
+
+.video audio {
+  width: 100%;
+  margin-top: var(--spacing-small);
+}
