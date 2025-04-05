@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Jan-Peter Herbst - Book Chapters</title>
-  <meta name="description" content="Browse the book chapters and conference proceedings by Prof. Dr. Dr. habil. Jan-Peter Herbst, covering topics in popular music studies, metal music production, and music technology.">
-  <meta name="keywords" content="book chapters, conference proceedings, academic research, popular music studies, metal music, Jan-Peter Herbst, scholarly work">
+  <meta name="description" content="Browse book chapters and contributions to edited volumes by Prof. Dr. Dr. habil. Jan-Peter Herbst, covering topics in popular music studies, metal music production, and music technology.">
+  <meta name="keywords" content="book chapters, edited volumes, academic research, popular music studies, metal music, Jan-Peter Herbst, scholarly contributions">
+  
+  <!-- Favicon -->
   <link href="../images/favicon.png" rel="shortcut icon">
   
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <!-- Local CSS -->
   <link href="../css/main.css" rel="stylesheet">
   <link href="publications.css" rel="stylesheet">
-
+  
+  <!-- Structured Data -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": "Book Chapters and Conference Proceedings - Jan-Peter Herbst",
-      "url": "http://www.janherbst.net/publications/chapters.html",
-      "description": "A collection of book chapters and conference proceedings by Prof. Dr. Dr. habil. Jan-Peter Herbst, covering research in popular music studies, metal music, and music production.",
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "Jan-Peter Herbst Academic Website",
-        "url": "http://www.janherbst.net"
-      }
-    }
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Book Chapters - Jan-Peter Herbst",
+    "url": "https://www.janherbst.net/publications/chapters.html",
+    "description": "A collection of book chapters and contributions to edited volumes by Prof. Dr. Dr. habil. Jan-Peter Herbst in popular music studies, music production, and related fields."
+  }
   </script>
 </head>
 
@@ -42,7 +41,7 @@
     </div>  
   </header>
   
-  <nav class="topnav" id="myTopnav">
+  <nav class="topnav" id="myTopnav" aria-label="Main Navigation">
     <a href="../index.html" class="split">Home</a>
     <a href="../media.html">Media</a>  
     <a href="../teaching.html">Teaching</a>
@@ -51,107 +50,143 @@
     <a href="../academic-service.html">Service</a>
     <a href="../cv.html">CV</a>
     <a href="../news-detail.html">News</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavigation()" aria-label="Toggle navigation menu">
       <i class="fa fa-bars"></i>
     </a>
   </nav>
   
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      x.classList.toggle("responsive");
-    }
-  </script>  
-
-  <main id="container" class="container">
-    
+  <main id="container" class="container" role="main">
     <div class="w3-panel w3-blue">
-      <h2 class="w3-opacity">Book Chapters and Conference Proceedings</h2>
+      <h2 class="w3-opacity">Book Chapters</h2>
     </div>
 
-    <div class="publications-menu">
-        <a href="indexpublications.html" class="menu-item">Overview</a> |
-        <a href="books.html" class="menu-item">Books</a> |
-        <a href="articles.html" class="menu-item">Journal Articles</a> |
-        <a href="chapters.html" class="menu-item">Book Chapters</a> |
-        <a href="other-publications.html" class="menu-item">Other Publications</a>
+    <div class="publications-menu" aria-label="Publications categories">
+      <a href="indexpublications.html" class="menu-item">Overview</a> |
+      <a href="books.html" class="menu-item">Books</a> |
+      <a href="articles.html" class="menu-item">Journal Articles</a> |
+      <a href="chapters.html" class="menu-item active-nav">Book Chapters</a> |
+      <a href="other-publications.html" class="menu-item">Other Publications</a>
     </div>
 
     <div class="publication">
       <ul>
-        <li>(2025) Martin Birch - Catalyst: The Pivotal Role of Deep Purple's Sound Engineer on the Classic Mk. 2 Albums. In: Brown, Andy R. (Ed.): <span style="color: #2196f3"><em>Who Do We Think They Are? : Deep Purple and Metal Studies</em></span>. London: Equinox Publishing <em>(forthcoming)</em>.</li>
-        <li>(2025) Heaviness: An Introduction to Metal's Prime Musical Quality. In: Heesch, Florian &amp; Höpflinger, Anna-Katharina (Eds.). <span style="color: #2196f3"><em>Metal Studies: The Loudest Handbook</em></span>. Freiburg: Rombach Wissenschaft <em>(forthcoming)</em>.</li>
-        <li>(2025) Songwriting-Camps: Kollaborative Songwriting-Praxis zwischen Songwriting-Tradition und musikindustrieller Transformation. In: Pfleiderer, Martin; Jost, Christofer; Just, Steffen &amp; Wernicke, Carsten (Eds.). <span style="color: #2196f3"><em>Musik in der spätmodernen Gesellschaft. Analysen, Positionen, Perspektiven</em></span>. Muenster: Waxmann, pp. 191–212.</li>
-        <li>(2025) (with Jan Nepomucen Pietrzak) Collaboration in an Online Environment: Creativity in Popular Music Production in Times of Covid-19. In: Ahlers, Michael; Herbst, Jan-Peter &amp; Holtsträter, Knut (Eds): <span style="color: #2196f3"><em>Popular Music Songwriting as Cultural, Creative, and Economic Practice</em></span>. Muenster: Waxmann <em>(forthcoming)</em>.</li>
-        <li>(2025) (with Mark Mynett) Contemporary Approaches to Metal Music Mixing and Production: Heavy Metal, Death Metal, and Metalcore. In: Burns, Lori &amp; Scotto, Ciro (Eds): <span style="color: #2196f3"><em>The Routledge Handbook of Metal Music Composition</em></span>. London: Routledge <em>(forthcoming)</em> <a href="https://doi.org/10.4324/9781003354451-34" target="_blank">doi.org/10.4324/9781003354451-34</a></li>
-        <li>(2024) (with Steve Waksman) Introduction to the Cambridge Companion to the Electric Guitar. In: Herbst, Jan-Peter &amp; Steve Waksman (Eds.): <span style="color: #2196f3"><em>The Cambridge Companion to the Electric Guitar.</em></span>  Cambridge: Cambridge University Press, pp. 1–13. <a href="https://doi.org/10.1017/9781009224420.001" target="_blank">doi.org/10.1017/9781009224420.001</a></li>
-        <li>(2024) (with Alexander Vallejo) Thumping, Glitch, and Butterfly Tapping: Innovations in Guitar Technique in the New Millennium. In: Herbst, Jan-Peter &amp; Waksman, Steve (Eds): <span style="color: #2196f3"><em>The Cambridge Companion to the Electric Guitar</em></span>. Cambridge: Cambridge University Press, pp. 165–188. <a href="https://doi.org/10.1017/9781009224420.010" target="_blank">doi.org/10.1017/9781009224420.010</a></li>
-        <li>(2024) (with Michael Ahlers) Songwriting Camps: Geschichte, Theorien und Forschungsansätze zur Fließband-Produktion von populärer Musik. In: von Appen, Ralf; Chaker, Sarah; Huber, Michael &amp; Prieske, Sean (Eds.): <span style="color: #2196f3"><em>Parallelgesellschaften in Populärer Musik: Abgrenzungen, Annäherungen, Perspektiven</em></span>. Bielefeld: transcript, pp. 315–342. <a href="../publications/chapters/Ahlers & Herbst 2024 - Songwriting Camps.pdf" target="_blank">(download <u>here</u>)</a></li>
-        <li>(2024) (with Eric Smialek &amp; Isabella Czedik-Eysenberg) Towards an Acoustic-Semantic Space of Extreme Metal Vocal Styles. <span style="color: #2196f3"><em>Proceedings of the German Society for Acoustics' Annual Conference for Acoustics, Leibniz University of Hanover (GER), 18-21 March 2024</em></span>, pp. 979–982. <a href="https://pub.dega-akustik.de/DAGA_2024/konferenz?article=456" target="_blank">(download <u>here</u>)</a></li>
-        <li>(2023) Introduction to the Cambridge Companion to Metal Music. In: Herbst, Jan-Peter (Ed.). <span style="color: #2196f3"><em>The Cambridge Companion to Metal Music.</em></span>  Cambridge: Cambridge University Press, pp. 1–11. <a href="https://doi.org/10.1017/9781108991162" target="_blank">doi.org/10.1017/9781108991162</a></li>
-        <li>(2023) (with Mark Mynett) Mapping the Origins of Heaviness between 1970-1995: A Historical Overview of Metal Music Production. In: Herbst, Jan-Peter (Ed.). <span style="color: #2196f3"><em>The Cambridge Companion to Metal Music.</em></span>  Cambridge: Cambridge University Press, pp. 29–42. <a href="https://doi.org/10.1017/9781108991162" target="_blank">doi.org/10.1017/9781108991162</a></li>
-        <li>(2023) 'It Just Is My Inner Refusal': Innovation and Conservatism in Guitar Amplification Technology. In: Moore, Austin &amp; Bromham, Gary (Eds.). <span style="color: #2196f3"><em>Distortion in Music Production.</em></span> London: Routledge, pp. 174–184. <a href="https://doi.org/10.4324/9780429356841" target="_blank">doi.org/10.4324/9780429356841</a></li>
-        <li>(2022) Infrastructure of the German Music Business. In: Schütte, Uwe (Ed.). <span style="color: #2196f3"><em>The Cambridge Companion to Krautrock.</em></span> Cambridge: Cambridge University Press, pp. 59–73. <a href="https://doi.org/10.1017/9781009036535.005" target="_blank">doi.org/10.1017/9781009036535.005</a></li>
-        <li>(2022) (with Lea Espinoza Garrado et al.) Transformations of the National: Rammstein's "Deutschland" as a Provocation of German History. In: Jacke, Christoph; Flath, Beate &amp; Troike, Manuel (Eds.): <span style="color: #2196f3"><em>Transformational POP: Transitions, Breaks, and Crises in Popular Music (Studies)</em></span>, pp. 179–204. <a href="http://vibes-theseries.org/wp-content/uploads/2022/10/Espinoza-Garrido-et-al.pdf" target="_blank">(open access)</a></li>
-        <li>(2020) Views of German Producers on 'Teutonic' Metal: Production Approaches and Generational Effects. In: Appen, Ralf von &amp; Hindrichs, Thorsten (Eds.): <span style="color: #2196f3"><em>One Nation Under a Groove. 'Nation' als Kategorie populärer Musik.</em></span> Bielefeld: transcript, pp. 183–206. <a href="../publications/chapters/Herbst 2020 - Views of German Producers on Teutonic Metal.pdf" target="_blank">(download <u>here</u>)</a></li>
-        <li>(2020) German Metal Attack: Power Metal in and from Germany. In: Seibt, Oliver; Ringsmut, Martin &amp; Wickström, Davil-Emil (Eds.): <span style="color: #2196f3"><em>Made in Germany</em></span> (Global Popular Music series). London: Routledge, pp. 81–89. <a href="https://doi.org/10.4324/9781351200790-10" target="_blank">doi.org/10.4324/9781351200790-10</a></li>
-        <li>(2019) Moonlight Shadows: "Licht und Schatten" in Pink Floyds <em>The Dark Side Of The Moon</em>. [Light and Shadow in Pink Floyd's <em>The Dark Side Of The Moon]</em>. In: Kathke, Petra (Ed): <span style="color: #2196f3"><em>Vom Schatten aus. Denk- und Handlungsräume in Kunst und Kunstpädagogik.</em></span> Hannover: fabricio, pp. 130–150. <a href="../publications/chapters/Herbst 2019 - Moonlight Shadows.pdf" target="_blank">(download <u>here</u>)</a></li>
-        <li>(2017) Virtuoses Sologitarrenspiel im Rock und Metal: Zum Einfluss von Verzerrung auf das "Shredding" [Virtuoso Solo Guitar in Rock and Metal Music: About the Influence of Distortion on "Shredding"]. In: Phleps, Thomas Ed.: <span style="color: #2196f3"><em>Schneller, höher, lauter. Virtuosität in populären Musiken</em></span> (Beiträge zur Popularmusikforschung, Bd. 43), pp. 131–152. <a href="http://geb.uni-giessen.de/geb/volltexte/2019/14258/pdf/Popularmusikforschung43_09_Herbst.pdf" target="_blank">doi.org/10.14361/9783839435922-009 (open access)</a></li>
-        <li>(2017) Influence of Distortion on Guitar Chord Structures: Acoustic Effects and Perceptual Correlates. In: Auhagen, Wolfgang; Bullerjahn, Claudia &amp; Louven, Christoph Eds.: <span style="color: #2196f3"><em>Musikpsychologie, vol. 27: Akustik und musikalische Hörwahrnehmung</em></span>. Göttingen: Hogrefe, pp. 26–47. <a href="https://dx.doi.org/10.23668/psycharchives.2805" target="_blank">dx.doi.org/10.23668/psycharchives.2805 (open access)</a></li>
-        <li>(2017) "Gear Acquisition Syndrome": A Study of Electric Guitar Players. In: Merrill, Julia Ed.: <span style="color: #2196f3"><em>Popular Music Studies Today</em></span>. Series Systematische Musikwissenschaft. Wiesbaden: Springer, pp. 139–148. <a href="../publications/chapters/Herbst 2017 - Gear Aquisition Syndrome.pdf" target="_blank">(download <u>here</u>)</a></li>
-        <li>(2017) Resonanz [Resonance]. In: Blohm, Manfred; Brenne, Andreas &amp; Hornäk, Sara Eds. <span style="color: #2196f3"><em>Inklusionsaspekte in den künstlerischen Fächern und der ästhetischen Bildung.</em></span> Hannover: Fabrico Verlag, pp. 217–222.</li>
-        <li>(2015) &quot;What's that Sound?&quot; Sound als didaktische Herausforderung der Populären Musik [Sound as an Educational Challenge of Popular Music]. In: Ahlers, Michael (Ed.): <span style="color: #2196f3"><em>Popmusik-Vermittlung. Zwischen Schule, Universität und Beruf (Theorie und Praxis der Musikvermittlung, vol. 14).</em></span> Münster: LIT, pp. 133–152. <a href="../publications/chapters/Herbst 2015 - What's that Sound.pdf" target="_blank">(download <u>here</u>)</a></li>
+        <li>(2025) Martin Birch - Catalyst: The Pivotal Role of Deep Purple's Sound Engineer on the Classic Mk. 2 Albums. In: Brown, Andy R. (Ed.): <em>Who Do We Think They Are? : Deep Purple and Metal Studies</em>. London: Equinox Publishing <em>(forthcoming)</em>.</li>
+        
+        <li>(2025) Heaviness: An Introduction to Metal's Prime Musical Quality. In: Heesch, Florian &amp; Höpflinger, Anna-Katharina (Eds.). <em>Metal Studies: The Loudest Handbook</em>. Freiburg: Rombach Wissenschaft <em>(forthcoming)</em>.</li>
+        
+        <li>(2025) Songwriting-Camps: Kollaborative Songwriting-Praxis zwischen Songwriting-Tradition und musikindustrieller Transformation. In: Pfleiderer, Martin; Jost, Christofer; Just, Steffen &amp; Wernicke, Carsten (Eds.). <em>Musik in der spätmodernen Gesellschaft. Analysen, Positionen, Perspektiven</em>. Muenster: Waxmann, pp. 191–212.</li>
+        
+        <li>(2025) (with Jan Nepomucen Pietrzak) Collaboration in an Online Environment: Creativity in Popular Music Production in Times of Covid-19. In: Ahlers, Michael; Herbst, Jan-Peter &amp; Holtsträter, Knut (Eds): <em>Popular Music Songwriting as Cultural, Creative, and Economic Practice</em>. Muenster: Waxmann <em>(forthcoming)</em>.</li>
+        
+        <li>(2025) (with Mark Mynett) Contemporary Approaches to Metal Music Mixing and Production: Heavy Metal, Death Metal, and Metalcore. In: Burns, Lori &amp; Scotto, Ciro (Eds): <em>The Routledge Handbook of Metal Music Composition</em>. London: Routledge <em>(forthcoming)</em> <a href="https://doi.org/10.4324/9781003354451-34" target="_blank">doi.org/10.4324/9781003354451-34</a></li>
+        
+        <li>(2024) (with Steve Waksman) Introduction to the Cambridge Companion to the Electric Guitar. In: Herbst, Jan-Peter &amp; Steve Waksman (Eds.): <em>The Cambridge Companion to the Electric Guitar.</em> Cambridge: Cambridge University Press, pp. 1–13. <a href="https://doi.org/10.1017/9781009224420.001" target="_blank">doi.org/10.1017/9781009224420.001</a></li>
+        
+        <li>(2024) (with Alexander Vallejo) Thumping, Glitch, and Butterfly Tapping: Innovations in Guitar Technique in the New Millennium. In: Herbst, Jan-Peter &amp; Waksman, Steve (Eds): <em>The Cambridge Companion to the Electric Guitar</em>. Cambridge: Cambridge University Press, pp. 165–188. <a href="https://doi.org/10.1017/9781009224420.010" target="_blank">doi.org/10.1017/9781009224420.010</a></li>
+        
+        <li>(2024) (with Michael Ahlers) Songwriting Camps: Geschichte, Theorien und Forschungsansätze zur Fließband-Produktion von populärer Musik. In: von Appen, Ralf; Chaker, Sarah; Huber, Michael &amp; Prieske, Sean (Eds.): <em>Parallelgesellschaften in Populärer Musik: Abgrenzungen, Annäherungen, Perspektiven</em>. Bielefeld: transcript, pp. 315–342. <a href="../publications/chapters/Ahlers & Herbst 2024 - Songwriting Camps.pdf" target="_blank">(download <u>here</u>)</a></li>
+        
+        <li>(2024) (with Eric Smialek &amp; Isabella Czedik-Eysenberg) Towards an Acoustic-Semantic Space of Extreme Metal Vocal Styles. <em>Proceedings of the German Society for Acoustics' Annual Conference for Acoustics, Leibniz University of Hanover (GER), 18-21 March 2024</em>, pp. 979–982. <a href="https://pub.dega-akustik.de/DAGA_2024/konferenz?article=456" target="_blank">(download <u>here</u>)</a></li>
+        
+        <li>(2023) Introduction to the Cambridge Companion to Metal Music. In: Herbst, Jan-Peter (Ed.). <em>The Cambridge Companion to Metal Music.</em> Cambridge: Cambridge University Press, pp. 1–11. <a href="https://doi.org/10.1017/9781108991162" target="_blank">doi.org/10.1017/9781108991162</a></li>
+        
+        <li>(2023) (with Mark Mynett) Mapping the Origins of Heaviness between 1970-1995: A Historical Overview of Metal Music Production. In: Herbst, Jan-Peter (Ed.). <em>The Cambridge Companion to Metal Music.</em> Cambridge: Cambridge University Press, pp. 29–42. <a href="https://doi.org/10.1017/9781108991162" target="_blank">doi.org/10.1017/9781108991162</a></li>
+        
+        <li>(2023) 'It Just Is My Inner Refusal': Innovation and Conservatism in Guitar Amplification Technology. In: Moore, Austin &amp; Bromham, Gary (Eds.). <em>Distortion in Music Production.</em> London: Routledge, pp. 174–184. <a href="https://doi.org/10.4324/9780429356841" target="_blank">doi.org/10.4324/9780429356841</a></li>
+        
+        <li>(2022) Infrastructure of the German Music Business. In: Schütte, Uwe (Ed.). <em>The Cambridge Companion to Krautrock.</em> Cambridge: Cambridge University Press, pp. 59–73. <a href="https://doi.org/10.1017/9781009036535.005" target="_blank">doi.org/10.1017/9781009036535.005</a></li>
+        
+        <li>(2022) (with Lea Espinoza Garrado et al.) Transformations of the National: Rammstein's "Deutschland" as a Provocation of German History. In: Jacke, Christoph; Flath, Beate &amp; Troike, Manuel (Eds.): <em>Transformational POP: Transitions, Breaks, and Crises in Popular Music (Studies)</em>, pp. 179–204. <a href="http://vibes-theseries.org/wp-content/uploads/2022/10/Espinoza-Garrido-et-al.pdf" target="_blank">(open access)</a></li>
+        
+        <li>(2020) Views of German Producers on 'Teutonic' Metal: Production Approaches and Generational Effects. In: Appen, Ralf von &amp; Hindrichs, Thorsten (Eds.): <em>One Nation Under a Groove. 'Nation' als Kategorie populärer Musik.</em> Bielefeld: transcript, pp. 183–206. <a href="../publications/chapters/Herbst 2020 - Views of German Producers on Teutonic Metal.pdf" target="_blank">(download <u>here</u>)</a></li>
+        
+        <li>(2020) German Metal Attack: Power Metal in and from Germany. In: Seibt, Oliver; Ringsmut, Martin &amp; Wickström, Davil-Emil (Eds.): <em>Made in Germany</em> (Global Popular Music series). London: Routledge, pp. 81–89. <a href="https://doi.org/10.4324/9781351200790-10" target="_blank">doi.org/10.4324/9781351200790-10</a></li>
+        
+        <li>(2019) Moonlight Shadows: "Licht und Schatten" in Pink Floyds <em>The Dark Side Of The Moon</em>. [Light and Shadow in Pink Floyd's <em>The Dark Side Of The Moon]</em>. In: Kathke, Petra (Ed): <em>Vom Schatten aus. Denk- und Handlungsräume in Kunst und Kunstpädagogik.</em> Hannover: fabricio, pp. 130–150. <a href="../publications/chapters/Herbst 2019 - Moonlight Shadows.pdf" target="_blank">(download <u>here</u>)</a></li>
+        
+        <li>(2017) Virtuoses Sologitarrenspiel im Rock und Metal: Zum Einfluss von Verzerrung auf das "Shredding" [Virtuoso Solo Guitar in Rock and Metal Music: About the Influence of Distortion on "Shredding"]. In: Phleps, Thomas Ed.: <em>Schneller, höher, lauter. Virtuosität in populären Musiken</em> (Beiträge zur Popularmusikforschung, Bd. 43), pp. 131–152. <a href="http://geb.uni-giessen.de/geb/volltexte/2019/14258/pdf/Popularmusikforschung43_09_Herbst.pdf" target="_blank">doi.org/10.14361/9783839435922-009 (open access)</a></li>
+        
+        <li>(2017) Influence of Distortion on Guitar Chord Structures: Acoustic Effects and Perceptual Correlates. In: Auhagen, Wolfgang; Bullerjahn, Claudia &amp; Louven, Christoph Eds.: <em>Musikpsychologie, vol. 27: Akustik und musikalische Hörwahrnehmung</em>. Göttingen: Hogrefe, pp. 26–47. <a href="https://dx.doi.org/10.23668/psycharchives.2805" target="_blank">dx.doi.org/10.23668/psycharchives.2805 (open access)</a></li>
+        
+        <li>(2017) "Gear Acquisition Syndrome": A Study of Electric Guitar Players. In: Merrill, Julia Ed.: <em>Popular Music Studies Today</em>. Series Systematische Musikwissenschaft. Wiesbaden: Springer, pp. 139–148. <a href="../publications/chapters/Herbst 2017 - Gear Aquisition Syndrome.pdf" target="_blank">(download <u>here</u>)</a></li>
+        
+        <li>(2017) Resonanz [Resonance]. In: Blohm, Manfred; Brenne, Andreas &amp; Hornäk, Sara Eds. <em>Inklusionsaspekte in den künstlerischen Fächern und der ästhetischen Bildung.</em> Hannover: Fabrico Verlag, pp. 217–222.</li>
+        
+        <li>(2015) &quot;What's that Sound?&quot; Sound als didaktische Herausforderung der Populären Musik [Sound as an Educational Challenge of Popular Music]. In: Ahlers, Michael (Ed.): <em>Popmusik-Vermittlung. Zwischen Schule, Universität und Beruf (Theorie und Praxis der Musikvermittlung, vol. 14).</em> Münster: LIT, pp. 133–152. <a href="../publications/chapters/Herbst 2015 - What's that Sound.pdf" target="_blank">(download <u>here</u>)</a></li>
       </ul>
     </div>
 
+    <div class="publication-nav">
+      <a href="indexpublications.html" class="btn">Back to Publications Overview</a>
+    </div>
   </main>
-
+  
   <footer id="footer" class="footer">
     <div class="up-arrow">
-      <a href="#myTopnav" aria-label="Back to top" style="color:#f2f2f2; font-size: 48px; line-height: 24px;">
+      <a href="#myTopnav" aria-label="Scroll to top">
         <span class="up-arrow">&#8673;</span>
       </a>  
     </div>  
     <div class="flex-box">
       <div class="row">
         <div class="column">
-          <a href="../index.html"><img src="../images/logo.png" class="footerLogo" alt="Jan-Peter Herbst logo" style="width: 250px; height: auto;"></a>
-          <p class="footerLogo"><small><span class="nobr">Popular Music Scholar | University Lecturer | Music Producer</span></small></p>
+          <a href="../index.html"><img src="../images/logo.png" class="footerLogo" alt="Jan-Peter Herbst logo" width="250" height="75"></a>
+          <p class="footerLogo"><small>Popular Music Scholar | University Lecturer | Music Producer</small></p>
         </div>
-
+        
         <div class="column">
-          <h4><span class="nobr">Memberships / Research Focus</span></h4>
+          <h4>Memberships / Research Focus</h4>
           <ul class="socialmedia social-links">
-            <li><a href="https://de.linkedin.com/pub/jan-herbst/96/15a/3a3" target="_blank"><img src="../images/linkedin.png" alt="LinkedIn"></a></li>   
-            <li><a href="https://researchgate.net/profile/Jan_Herbst" target="_blank"><img src="../images/researchGate.png" alt="ResearchGate"></a></li>
-            <li><a href="https://pure.hud.ac.uk/en/persons/jan-herbst" target="_blank"><img src="../images/unisymb.png" alt="University Profile"></a></li>
-            <li><a href="#" target="_blank"><img src="../images/lupe.png" alt="Research"></a></li>
+            <li><a href="https://de.linkedin.com/pub/jan-herbst/96/15a/3a3" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><img src="../images/linkedin.png" alt="LinkedIn"></a></li>   
+            <li><a href="https://researchgate.net/profile/Jan_Herbst" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate Profile"><img src="../images/researchGate.png" alt="ResearchGate"></a></li>
+            <li><a href="https://pure.hud.ac.uk/en/persons/jan-herbst" target="_blank" rel="noopener noreferrer" aria-label="University Profile"><img src="../images/unisymb.png" alt="University Symbol"></a></li>
+            <li><a href="#" aria-label="Research"><img src="../images/lupe.png" alt="Research"></a></li>
           </ul>
           
           <ul class="socialmedia social-links2">
-            <li><a href="https://orcid.org/0000-0001-7453-0141" target="_blank"><img src="../images/orcid.png" alt="ORCID"></a></li>   
-            <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57209584151" target="_blank"><img src="../images/scopus.png" alt="Scopus"></a></li>
-            <li><a href="https://www.growkudos.com/profile/jan_herbst" target="_blank"><img src="../images/kudos.png" alt="Kudos"></a></li>
-            <li><a href="https://www.managers.org.uk" target="_blank"><img src="../images/cmi_rund.png" alt="CMI"></a></li>
+            <li><a href="https://orcid.org/0000-0001-7453-0141" target="_blank" rel="noopener noreferrer" aria-label="ORCID Profile"><img src="../images/orcid.png" alt="ORCID"></a></li>   
+            <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57209584151" target="_blank" rel="noopener noreferrer" aria-label="Scopus Profile"><img src="../images/scopus.png" alt="Scopus"></a></li>
+            <li><a href="https://www.growkudos.com/profile/jan_herbst" target="_blank" rel="noopener noreferrer" aria-label="Kudos Profile"><img src="../images/kudos.png" alt="Kudos"></a></li>
+            <li><a href="https://www.managers.org.uk" target="_blank" rel="noopener noreferrer" aria-label="CMI Website"><img src="../images/cmi_rund.png" alt="CMI"></a></li>
           </ul>
         </div>
-
+        
         <div class="column space">
           <h4>Additional Links</h4>
           <ul>
             <li><a href="../cap_cnt.php">Contact</a></li>
             <li><a href="../research.html#resArea">Research Areas</a></li>
-            <li><a href="../research.html#servAcad">Service to Academia</a></li>  
+            <li><a href="../academic-service.html">Service to Academia</a></li>  
             <li><a href="../privacy.html">Privacy Policy</a></li>
             <li><a href="../imprint.html">Impressum</a></li>
           </ul>
         </div>
       </div>
     </div>
+    
     <p>&copy; Copyright <strong><span>Prof. Dr. Dr. habil. Jan-Peter Herbst</span></strong>. All Rights Reserved</p>
-  </footer>  
+  </footer>
 
-  <script src="publications.js"></script>
-
+  <!-- JavaScript -->
+  <script>
+    function toggleNavigation() {
+      document.getElementById("myTopnav").classList.toggle("responsive");
+    }
+    
+    // Highlight active navigation item
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPage = window.location.pathname.split('/').pop();
+      const menuItems = document.querySelectorAll('.publications-menu .menu-item');
+      
+      menuItems.forEach(item => {
+        const href = item.getAttribute('href');
+        if (href === currentPage || (currentPage === '' && href === 'indexpublications.html')) {
+          item.classList.add('active-nav');
+        } else {
+          item.classList.remove('active-nav');
+        }
+      });
+    });
+  </script>
 </body>
 </html>

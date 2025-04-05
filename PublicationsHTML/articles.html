@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Jan-Peter Herbst - Journal Articles</title>
   <meta name="description" content="Browse all journal articles by Prof. Dr. Dr. habil. Jan-Peter Herbst, spanning topics in popular music studies, metal music research, music production, and music education.">
   <meta name="keywords" content="academic articles, journal publications, metal music studies, music production research, Jan-Peter Herbst, scholarly articles">
+  
+  <!-- Favicon -->
   <link href="../images/favicon.png" rel="shortcut icon">
   
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <!-- Local CSS -->
   <link href="../css/main.css" rel="stylesheet">
   <link href="publications.css" rel="stylesheet">
   
+  <!-- Structured Data -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": "Journal Articles - Jan-Peter Herbst",
-      "url": "http://www.janherbst.net/publications/articles.html",
-      "description": "A comprehensive collection of academic journal articles by Prof. Dr. Dr. habil. Jan-Peter Herbst on topics including metal music studies, music production, and popular music research.",
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "Jan-Peter Herbst Academic Website",
-        "url": "http://www.janherbst.net"
-      }
-    }
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Journal Articles - Jan-Peter Herbst",
+    "url": "https://www.janherbst.net/publications/articles.html",
+    "description": "A comprehensive collection of academic journal articles by Prof. Dr. Dr. habil. Jan-Peter Herbst on topics including metal music studies, music production, and popular music research."
+  }
   </script>
+  
+  <!-- PlumX Widget Script -->
+  <script defer src="//cdn.plu.mx/widget-popup.js"></script>
 </head>
 
 <body>
@@ -42,43 +44,35 @@
     </div>  
   </header>
   
-  <nav class="topnav" id="myTopnav">
+  <nav class="topnav" id="myTopnav" aria-label="Main Navigation">
     <a href="../index.html" class="split">Home</a>
     <a href="../media.html">Media</a>  
     <a href="../teaching.html">Teaching</a>
-    <a href="../publication.html" class="active">Publications</a>  
+    <a href="indexpublications.html" class="active">Publications</a>  
     <a href="../research.html">Research</a>
     <a href="../academic-service.html">Service</a>
     <a href="../cv.html">CV</a>
     <a href="../news-detail.html">News</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavigation()" aria-label="Toggle navigation menu">
       <i class="fa fa-bars"></i>
     </a>
   </nav>
   
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      x.classList.toggle("responsive");
-    }
-  </script>  
-
-  <main id="container" class="container">
-    
+  <main id="container" class="container" role="main">
     <div class="w3-panel w3-blue">
       <h2 class="w3-opacity">Journal Articles</h2>
     </div>
 
-    <div class="publications-menu">
-        <a href="indexpublications.html" class="menu-item">Overview</a> |
-        <a href="books.html" class="menu-item">Books</a> |
-        <a href="articles.html" class="menu-item">Journal Articles</a> |
-        <a href="chapters.html" class="menu-item">Book Chapters</a> |
-        <a href="other-publications.html" class="menu-item">Other Publications</a>
+    <div class="publications-menu" aria-label="Publications categories">
+      <a href="indexpublications.html" class="menu-item">Overview</a> |
+      <a href="books.html" class="menu-item">Books</a> |
+      <a href="articles.html" class="menu-item active-nav">Journal Articles</a> |
+      <a href="chapters.html" class="menu-item">Book Chapters</a> |
+      <a href="other-publications.html" class="menu-item">Other Publications</a>
     </div>
 
     <!-- Year-based navigation section -->
-    <div class="years-nav">
+    <div class="years-nav" aria-label="Jump to year navigation">
       <strong>Jump to year:</strong> 
       <a href="#year-2025">2025</a> | 
       <a href="#year-2024">2024</a> | 
@@ -886,79 +880,6 @@
       </footer>  
     
       <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
-    
-      <style>
-        /* Additional styles for publications section */
-        .publications-menu {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          margin: 1rem 0 2rem 0;
-          padding: 0.5rem;
-          background-color: #f5f5f5;
-          border-radius: 4px;
-        }
-        
-        .publications-menu a, .publications-menu strong {
-          margin: 0 0.5rem;
-          padding: 0.3rem 0.5rem;
-        }
-        
-        .publications-menu a:hover {
-          background-color: #e0e0e0;
-          border-radius: 3px;
-        }
-        
-        .years-nav {
-          text-align: center;
-          margin: 1.5rem 0;
-          padding: 0.5rem;
-          background-color: #f9f9f9;
-          border-radius: 4px;
-        }
-        
-        .years-nav a {
-          display: inline-block;
-          padding: 0.2rem 0.5rem;
-          color: #2196f3;
-          text-decoration: none;
-        }
-        
-        .years-nav a:hover {
-          background-color: #e9e9e9;
-          border-radius: 3px;
-        }
-        
-        .publication h3 {
-          margin-top: 2rem;
-          padding: 0.5rem;
-          background-color: #f5f5f5;
-          border-left: 4px solid #2196f3;
-        }
-        
-        .publication-nav {
-          display: flex;
-          justify-content: center;
-          margin-top: 3rem;
-        }
-        
-        .btn {
-          display: inline-block;
-          padding: 0.7rem 1.2rem;
-          background-color: #2196f3;
-          color: white;
-          text-decoration: none;
-          border-radius: 4px;
-          transition: background-color 0.3s ease;
-        }
-        
-        .btn:hover {
-          background-color: #0d8bf2;
-          color: white;
-        }
-      </style>
-
-    <script src="publications.js"></script>
-
+      <script src="publications.js"></script>
     </body>
     </html>

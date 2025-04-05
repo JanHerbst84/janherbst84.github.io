@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Jan-Peter Herbst - Book Chapters</title>
-  <meta name="description" content="Browse the book chapters and conference proceedings by Prof. Dr. Dr. habil. Jan-Peter Herbst, covering topics in popular music studies, metal music production, and music technology.">
-  <meta name="keywords" content="book chapters, conference proceedings, academic research, popular music studies, metal music, Jan-Peter Herbst, scholarly work">
+  <title>Jan-Peter Herbst - Books</title>
+  <meta name="description" content="Browse books authored and edited by Prof. Dr. Dr. habil. Jan-Peter Herbst on popular music studies, metal music production, and electric guitar research.">
+  <meta name="keywords" content="books, academic books, metal music studies, electric guitar, popular music, Jan-Peter Herbst, scholarly books">
+  
+  <!-- Favicon -->
   <link href="../images/favicon.png" rel="shortcut icon">
   
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <!-- Local CSS -->
   <link href="../css/main.css" rel="stylesheet">
   <link href="publications.css" rel="stylesheet">
   
+  <!-- Structured Data -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": "Book Chapters and Conference Proceedings - Jan-Peter Herbst",
-      "url": "http://www.janherbst.net/publications/chapters.html",
-      "description": "A collection of book chapters and conference proceedings by Prof. Dr. Dr. habil. Jan-Peter Herbst, covering research in popular music studies, metal music, and music production."
-    }
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Books - Jan-Peter Herbst",
+    "url": "https://www.janherbst.net/publications/books.html",
+    "description": "A collection of academic books authored and edited by Prof. Dr. Dr. habil. Jan-Peter Herbst on topics including metal music studies, popular music production, and the electric guitar."
+  }
   </script>
 </head>
 
@@ -37,7 +41,7 @@
     </div>  
   </header>
   
-  <nav class="topnav" id="myTopnav">
+  <nav class="topnav" id="myTopnav" aria-label="Main Navigation">
     <a href="../index.html" class="split">Home</a>
     <a href="../media.html">Media</a>  
     <a href="../teaching.html">Teaching</a>
@@ -46,31 +50,24 @@
     <a href="../academic-service.html">Service</a>
     <a href="../cv.html">CV</a>
     <a href="../news-detail.html">News</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavigation()" aria-label="Toggle navigation menu">
       <i class="fa fa-bars"></i>
     </a>
   </nav>
   
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      x.classList.toggle("responsive");
-    }
-  </script>  
-
-  <main id="container" class="container">
-    
+  <main id="container" class="container" role="main">
     <div class="w3-panel w3-blue">
-      <h2 class="w3-opacity">Book Chapters and Conference Proceedings</h2>
+      <h2 class="w3-opacity">Books</h2>
     </div>
 
-    <div class="publications-menu">
-        <a href="indexpublications.html" class="menu-item">Overview</a> |
-        <a href="books.html" class="menu-item">Books</a> |
-        <a href="articles.html" class="menu-item">Journal Articles</a> |
-        <a href="chapters.html" class="menu-item">Book Chapters</a> |
-        <a href="other-publications.html" class="menu-item">Other Publications</a>
-      </div>    
+    <div class="publications-menu" aria-label="Publications categories">
+      <a href="indexpublications.html" class="menu-item">Overview</a> |
+      <a href="books.html" class="menu-item active-nav">Books</a> |
+      <a href="articles.html" class="menu-item">Journal Articles</a> |
+      <a href="chapters.html" class="menu-item">Book Chapters</a> |
+      <a href="other-publications.html" class="menu-item">Other Publications</a>
+    </div>
+    
     <p>This page features my authored books, edited volumes, and special journal issues. My work focuses primarily on the electric guitar, metal music production, and popular music studies. Many of these books are the result of collaborative projects with colleagues from institutions around the world.</p>
    
     <div class="book-section">
@@ -82,7 +79,7 @@
             <img src="../images/bc_cupguitar.png" alt="Cambridge Companion to the Electric Guitar">
           </div>
           <div class="book-info">
-            <div class="book-title">The Cambridge Companion to the Electric Guitar</div>
+            <h4 class="book-title">The Cambridge Companion to the Electric Guitar</h4>
             <div class="book-authors">Jan-Peter Herbst & Steve Waksman (Eds.)</div>
             <div class="book-publisher">Cambridge University Press</div>
             <div class="book-year">2024</div>
@@ -97,7 +94,7 @@
             <img src="../images/bc_virtuosity.png" alt="Rock Guitar Virtuosos">
           </div>
           <div class="book-info">
-            <div class="book-title">Rock Guitar Virtuosos: Advances in Electric Guitar Playing, Technology and Culture</div>
+            <h4 class="book-title">Rock Guitar Virtuosos: Advances in Electric Guitar Playing, Technology and Culture</h4>
             <div class="book-authors">Jan-Peter Herbst & Alexander Vallejo</div>
             <div class="book-publisher">Cambridge University Press</div>
             <div class="book-year">2023</div>
@@ -112,7 +109,7 @@
             <img src="../images/bc_cupmetal.png" alt="Cambridge Companion to Metal Music">
           </div>
           <div class="book-info">
-            <div class="book-title">The Cambridge Companion to Metal Music</div>
+            <h4 class="book-title">The Cambridge Companion to Metal Music</h4>
             <div class="book-authors">Jan-Peter Herbst (Ed.)</div>
             <div class="book-publisher">Cambridge University Press</div>
             <div class="book-year">2023</div>
@@ -127,7 +124,7 @@
             <img src="../images/bc_rammstein.png" alt="Rammstein's Germany">
           </div>
           <div class="book-info">
-            <div class="book-title">Rammstein's "Germany": Pop - Politics - Provocations</div>
+            <h4 class="book-title">Rammstein's "Germany": Pop - Politics - Provocations</h4>
             <div class="book-authors">Jan-Peter Herbst, Kerstin Wilhelms et al.</div>
             <div class="book-publisher">Springer</div>
             <div class="book-year">2022</div>
@@ -142,7 +139,7 @@
             <img src="../images/bc_gas.png" alt="Gear Acquisition Syndrome">
           </div>
           <div class="book-info">
-            <div class="book-title">Gear Acquisition Syndrome: Consumption of Instruments and Technology in Popular Music</div>
+            <h4 class="book-title">Gear Acquisition Syndrome: Consumption of Instruments and Technology in Popular Music</h4>
             <div class="book-authors">Jan-Peter Herbst & Jonas Menze</div>
             <div class="book-publisher">University of Huddersfield Press</div>
             <div class="book-year">2021</div>
@@ -158,7 +155,7 @@
             <img src="../images/bc_verzerrung.png" alt="Die Gitarrenverzerrung in der Rockmusik">
           </div>
           <div class="book-info">
-            <div class="book-title">Die Gitarrenverzerrung in der Rockmusik</div>
+            <h4 class="book-title">Die Gitarrenverzerrung in der Rockmusik</h4>
             <div class="book-authors">Jan-Peter Herbst</div>
             <div class="book-publisher">LIT Verlag</div>
             <div class="book-year">2016</div>
@@ -173,7 +170,7 @@
             <img src="../images/bc_netzwerk.png" alt="Netzwerk Sound">
           </div>
           <div class="book-info">
-            <div class="book-title">Netzwerk Sound</div>
+            <h4 class="book-title">Netzwerk Sound</h4>
             <div class="book-authors">Jan-Peter Herbst</div>
             <div class="book-publisher">Wissner</div>
             <div class="book-year">2014</div>
@@ -194,11 +191,10 @@
             <img src="../images/bc_HiMMP1.png" alt="Heaviness in Metal Music Production Vol 1 Cover">
           </div>
           <div class="book-info">
-            <div class="book-title">Heaviness in Metal Music Production: How and Why It Works (Vol. 1)</div>
+            <h4 class="book-title">Heaviness in Metal Music Production: How and Why It Works (Vol. 1)</h4>
             <div class="book-authors">Jan-Peter Herbst & Mark Mynett</div>
             <div class="book-publisher">London: Routledge</div>
             <div class="book-year">2025</div>
-            <!-- Add book-links div here if needed later -->
           </div>
         </div>
 
@@ -207,11 +203,10 @@
             <img src="../images/bc_HiMMP2.png" alt="Heaviness in Metal Music Production Vol 2 Cover">
           </div>
           <div class="book-info">
-            <div class="book-title">Heaviness in Metal Music Production: Learn From the Masters (Vol. 2)</div>
+            <h4 class="book-title">Heaviness in Metal Music Production: Learn From the Masters (Vol. 2)</h4>
             <div class="book-authors">Jan-Peter Herbst & Mark Mynett</div>
             <div class="book-publisher">London: Routledge</div>
             <div class="book-year">2025</div>
-            <!-- Add book-links div here if needed later -->
           </div>
         </div>
         
@@ -220,11 +215,10 @@
             <img src="../images/bc_song.png" alt="Popular Music Songwriting Cover">
           </div>
           <div class="book-info">
-            <div class="book-title">Popular Music Songwriting as Cultural, Creative, and Economic Practice. Yearbook 'Song and Popular Culture' of the Centre for Popular Culture and Music, Vol. 69</div>
+            <h4 class="book-title">Popular Music Songwriting as Cultural, Creative, and Economic Practice</h4>
             <div class="book-authors">Michael Ahlers, Jan-Peter Herbst & Knut Holtsträter (Eds.)</div>
             <div class="book-publisher">Münster: Waxmann</div>
             <div class="book-year">2025</div>
-            <!-- Add book-links div here if needed later -->
           </div>
         </div>
       </div>
@@ -271,94 +265,90 @@
         <h4>On <em>The Cambridge Companion to Metal Music</em></h4>
         
         <div class="review-item">
-          <p class="w3-serif"><em>Elena Bos</em><br>
+          <p><em>Elena Bos</em><br>
           "Overall, the volume manages to fulfil its promise of »providing a broader scope and an overview of metal music studies« (3). Readers will gain a sense of the diversity within metal as a distinct music culture, but also of the broad range of disciplinary approaches and perspectives in metal research. Contributions mostly provide a sound recapitulation of established theories within the field, and, along with the annexed bibliography, which encompasses most of the important recent secondary literature, invite further reading. […] the volume demonstrates the nuanced and constructively critical thinking prevalent in this academic niche, which makes it an essential reading both for established as well as new metal studies scholars and will hopefully inspire more innovative research." <a href="https://gfpm-samples.de/index.php/samples/article/view/313/292" target="_blank">(original review)</a></p>
         </div>
-
 
         <h4>On <em>The Gear Acquisition Syndrome</em></h4>
         
         <div class="review-item">
-          <p class="w3-serif"><em>Dr Reinhard Kopanski:</em><br>
+          <p><em>Dr Reinhard Kopanski:</em><br>
           "The study 'Gear Acquisition Syndrome: Consumption of Instruments and Technology in Popular Music' by Jan-Peter Herbst and Jonas Menze addresses these almost limitless possibilities for upgrading one's own equipment. The authors present […] a first comprehensive academic study on the 'Gear Acquisition Syndrome' in which the phenomenon is explored in a multi-method manner. […] All in all, Gear Acquisition Syndrome is a thoroughly entertaining book, but one with a lot of (methodological and theoretical) requirements and demands a certain affinity for music technology as well as a basic understanding of sound designing and engineering practices. Theoretically and methodologically, the study is well done." <a href="https://intellectdiscover.com/content/journals/10.1386/mms_00079_5" target="_blank">(original review)</a></p>
-        </div>
-        
-        <h4>On <em>Die Gitarrenverzerrung in der Rockmusik</em></h4>  
-        
-        <div class="review-item">
-          <p class="w3-serif"><em>Dr Dennis Schütze:</em><br>
-          Translation: "The author has made guitar distortion, an essential albeit underrepresented feature of rock music in musicology and education, the main subject of his book. Based on different methodical approaches, he describes and analyses the issue extensively, and presents his results on more than 400 pages. [...] Herbst has done excellent work. He seriously approaches the somehow intangible subject, and achieves a high level of academic rigour. His methods are contemporary and always highly transparent. In doing so, he makes a very concrete, accessible and thus welcome contribution to the academic discipline of popular music studies." <a href="https://dennisschuetze.de/blog/2017/01/09/buch-die-gitarrenverzerrung-in-der-rockmusik-von-jan-peter-herbst/" target="_blank">(original review)</a></p>
-        </div>
-        
-        <div class="review-item">
-          <p class="w3-serif"><em>PD Dr Knut Holtsträter:</em><br>
-          Translation: "In conclusion, the importance of this work for the scientific examination of the electric guitar cannot be overestimated, precisely because it attempts to bridge the gaps between experimental research, empiricism and aesthetics."</p>
-        </div>
-        
-        <div class="review-item">
-          <p class="w3-serif"><em>Praxis des Musikunterrichts:</em><br>
-          Translation: "With his far-reaching investigations, the author informs musicians about distortion's influence on popular music. His readers are encouraged to reflect on fundamental differences between the distorted electric guitar and its acoustic counterpart. Distortion features other challenges to playing but also offers new ways of expression. […] The book supplies valuable historical, aesthetic and analytical insights into this fascinating instrument. Irrespective of any pre-existing knowledge, it is recommendable for all readers interested in the guitar and in rock music."</p>
-        </div>
-        
-        <h4>On <em>Netzwerk Sound</em></h4>
-
-        <div class="review-item">
-          <p class="w3-serif"><em>Musik &amp; Unterricht:</em><br>
-          Translation: "The book is useful for scientifically interested readers as well as for practitioners who would like to get to know alternative educational possibilities of teaching popular music with a special focus on perception and feeling, musical design, culture and external contexts of application."</p>
         </div>
       </div>
     </div>
     
-    <a href="indexpublications.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Publications Overview</a>
-    
+    <div class="publication-nav">
+      <a href="indexpublications.html" class="btn">Back to Publications Overview</a>
+    </div>
   </main>
-
+  
   <footer id="footer" class="footer">
     <div class="up-arrow">
-      <a href="#myTopnav" aria-label="Back to top" style="color:#f2f2f2; font-size: 48px; line-height: 24px;">
+      <a href="#myTopnav" aria-label="Scroll to top">
         <span class="up-arrow">&#8673;</span>
       </a>  
     </div>  
     <div class="flex-box">
       <div class="row">
         <div class="column">
-          <a href="../index.html"><img src="../images/logo.png" class="footerLogo" alt="Jan-Peter Herbst logo" style="width: 250px; height: auto;"></a>
-          <p class="footerLogo"><small><span class="nobr">Popular Music Scholar | University Lecturer | Music Producer</span></small></p>
+          <a href="../index.html"><img src="../images/logo.png" class="footerLogo" alt="Jan-Peter Herbst logo" width="250" height="75"></a>
+          <p class="footerLogo"><small>Popular Music Scholar | University Lecturer | Music Producer</small></p>
         </div>
-
+        
         <div class="column">
-          <h4><span class="nobr">Memberships / Research Focus</span></h4>
+          <h4>Memberships / Research Focus</h4>
           <ul class="socialmedia social-links">
-            <li><a href="https://de.linkedin.com/pub/jan-herbst/96/15a/3a3" target="_blank"><img src="../images/linkedin.png" alt="LinkedIn"></a></li>   
-            <li><a href="https://researchgate.net/profile/Jan_Herbst" target="_blank"><img src="../images/researchGate.png" alt="ResearchGate"></a></li>
-            <li><a href="https://pure.hud.ac.uk/en/persons/jan-herbst" target="_blank"><img src="../images/unisymb.png" alt="University Profile"></a></li>
-            <li><a href="#" target="_blank"><img src="../images/lupe.png" alt="Research"></a></li>
+            <li><a href="https://de.linkedin.com/pub/jan-herbst/96/15a/3a3" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><img src="../images/linkedin.png" alt="LinkedIn"></a></li>   
+            <li><a href="https://researchgate.net/profile/Jan_Herbst" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate Profile"><img src="../images/researchGate.png" alt="ResearchGate"></a></li>
+            <li><a href="https://pure.hud.ac.uk/en/persons/jan-herbst" target="_blank" rel="noopener noreferrer" aria-label="University Profile"><img src="../images/unisymb.png" alt="University Symbol"></a></li>
+            <li><a href="#" aria-label="Research"><img src="../images/lupe.png" alt="Research"></a></li>
           </ul>
           
           <ul class="socialmedia social-links2">
-            <li><a href="https://orcid.org/0000-0001-7453-0141" target="_blank"><img src="../images/orcid.png" alt="ORCID"></a></li>   
-            <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57209584151" target="_blank"><img src="../images/scopus.png" alt="Scopus"></a></li>
-            <li><a href="https://www.growkudos.com/profile/jan_herbst" target="_blank"><img src="../images/kudos.png" alt="Kudos"></a></li>
-            <li><a href="https://www.managers.org.uk" target="_blank"><img src="../images/cmi_rund.png" alt="CMI"></a></li>
+            <li><a href="https://orcid.org/0000-0001-7453-0141" target="_blank" rel="noopener noreferrer" aria-label="ORCID Profile"><img src="../images/orcid.png" alt="ORCID"></a></li>   
+            <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57209584151" target="_blank" rel="noopener noreferrer" aria-label="Scopus Profile"><img src="../images/scopus.png" alt="Scopus"></a></li>
+            <li><a href="https://www.growkudos.com/profile/jan_herbst" target="_blank" rel="noopener noreferrer" aria-label="Kudos Profile"><img src="../images/kudos.png" alt="Kudos"></a></li>
+            <li><a href="https://www.managers.org.uk" target="_blank" rel="noopener noreferrer" aria-label="CMI Website"><img src="../images/cmi_rund.png" alt="CMI"></a></li>
           </ul>
         </div>
-
+        
         <div class="column space">
           <h4>Additional Links</h4>
           <ul>
             <li><a href="../cap_cnt.php">Contact</a></li>
             <li><a href="../research.html#resArea">Research Areas</a></li>
-            <li><a href="../research.html#servAcad">Service to Academia</a></li>  
+            <li><a href="../academic-service.html">Service to Academia</a></li>  
             <li><a href="../privacy.html">Privacy Policy</a></li>
             <li><a href="../imprint.html">Impressum</a></li>
           </ul>
         </div>
       </div>
     </div>
+    
     <p>&copy; Copyright <strong><span>Prof. Dr. Dr. habil. Jan-Peter Herbst</span></strong>. All Rights Reserved</p>
-  </footer>  
+  </footer>
 
-  <script src="publications.js"></script>
-
+  <!-- JavaScript -->
+  <script>
+    function toggleNavigation() {
+      document.getElementById("myTopnav").classList.toggle("responsive");
+    }
+    
+    // Highlight active navigation item
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPage = window.location.pathname.split('/').pop();
+      const menuItems = document.querySelectorAll('.publications-menu .menu-item');
+      
+      menuItems.forEach(item => {
+        const href = item.getAttribute('href');
+        if (href === currentPage || (currentPage === '' && href === 'indexpublications.html')) {
+          item.classList.add('active-nav');
+        } else {
+          item.classList.remove('active-nav');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
