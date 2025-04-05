@@ -120,24 +120,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     </div>	
   </header>
   
-  <div class="topnav" id="myTopnav">
+  <nav class="topnav" id="myTopnav" aria-label="Main Navigation">
     <a href="index.html" class="split">Home</a>
     <a href="media.html">Media</a>	
     <a href="teaching.html">Teaching</a>
     <a href="publicationshtml/indexpublications.html">Publications</a>	
     <a href="research.html">Research</a>
+    <a href="academic-service.html">Service</a>
     <a href="cv.html">CV</a>
     <a href="news-detail.html">News</a>
     <a href="cap_cnt.php" class="active">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavigation()" aria-label="Toggle navigation menu">
       <i class="fa fa-bars"></i>
     </a>
-  </div>
+  </nav>
   
   <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      x.classList.toggle("responsive");
+    function toggleNavigation() {
+      const nav = document.getElementById("myTopnav");
+      nav.classList.toggle("responsive");
     }
   </script>
   
