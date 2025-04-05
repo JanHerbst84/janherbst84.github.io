@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
   <meta content="contact, form submission, Jan-Peter Herbst" name="keywords">
   <link href="images/favicon.png" rel="shortcut icon">
   
-  <link href="styles.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -124,7 +124,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     <a href="index.html" class="split">Home</a>
     <a href="media.html">Media</a>	
     <a href="teaching.html">Teaching</a>
-    <a href="publication.html">Publications</a>	
+    <a href="publicationshtml/indexpublications.html">Publications</a>	
     <a href="research.html">Research</a>
     <a href="cv.html">CV</a>
     <a href="news-detail.html">News</a>

@@ -25,7 +25,7 @@ for($i = 0; $i < 6; $i++) {
     $captcha_text .= $characters[$random_index];
     
     // Add character to image with random rotation
-    $font = realpath('./arial.ttf'); // Ensure this path is correct
+    $font = realpath('./fonts/arial.ttf'); // Updated path to fonts directory
     $font_size = rand(18, 25);
     $angle = rand(-15, 15);
     $x = 25 + ($i * 35);

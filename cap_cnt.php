@@ -12,7 +12,7 @@
   <meta content="contact, Jan-Peter Herbst, email, academic contact" name="keywords">
   <link href="images/favicon.png" rel="shortcut icon">
   
-  <link href="styles.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
