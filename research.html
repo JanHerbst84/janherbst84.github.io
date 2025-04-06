@@ -14,6 +14,7 @@
   <link href="images/favicon.png" rel="shortcut icon">
 	
 <link href="css/main.css" rel="stylesheet">
+<link href="css/researchtimeline.css" rel="stylesheet">
 
 <script type="application/ld+json">
 	{
@@ -64,7 +65,7 @@ function myFunction() {
 	 <h3 class="w3-opacity">Academic Research and Teaching Focus </h3>
 	</div>
 	
-  <div id="resArea">	
+<div id="resArea">	
 	<div class="focus">
 	  <ul class="focus">
 		<li>&ensp;Popular music studies (especially rock and metal music studies)</li>
@@ -77,11 +78,34 @@ function myFunction() {
 		<li>&ensp;Music performance studies</li>
 	  </ul>
 	 </div>
-	  </div>
+</div>
+
+<div class="w3-panel w3-blue">
+	 <h3 class="w3-opacity">Timeline of Bigger Research Projects</h3>
+</div>
+
+<div id="resTimeline">
+    <div class="timeline-container">
+        <canvas id="timelineCanvas" class="timeline-canvas" width="1200" height="600"></canvas>
+    </div>
+    
+    <div class="timeline-controls">
+        <button id="zoomIn">Zoom In</button>
+        <button id="zoomOut">Zoom Out</button>
+        <button id="panLeft">← Pan Left</button>
+        <button id="panRight">Pan Right →</button>
+        <button id="reset">Reset View</button>
+    </div>
+    
+    <div class="timeline-legend">
+        <h3>Legend</h3>
+        <div id="legendItems"></div>
+    </div>
+</div>
 
 <div class="w3-panel w3-blue">
 	 <h3 class="w3-opacity">Research Areas</h3>
-	</div>		
+</div>		
 
 <div id="resFund">
 </div><button class="accordion">Funded Projects</button>
@@ -436,5 +460,6 @@ document.addEventListener('DOMContentLoaded', setupAccordions);</script>
 		 <p>
         &copy; Copyright <strong><span>Prof. Dr. Dr. habil. Jan-Peter Herbst</span></strong>. All Rights Reserved </p>
 </footer>	
+<script src="js/researchtimeline.js"></script>
 </body>
 </html>

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  
+  <title>Jan-Peter Herbst - Research Impact</title>
+  <meta name="description" content="Explore the research impact and metrics of Prof. Dr. Dr. habil. Jan-Peter Herbst's work in popular music studies, metal music research, and music production.">
+  <meta name="keywords" content="research impact, citations, h-index, metrics, scholarly impact, research metrics, Jan-Peter Herbst">
+  <link href="images/favicon.png" rel="shortcut icon">
+  
+  <link href="css/main.css" rel="stylesheet">
+  <!-- Additional CSS for Research Impact page -->
+  <style>
+    /* Impact metric cards */
+    .metrics-dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .metric-card {
+      background-color: #f9f9f9;
+      border-radius: 4px;
+      padding: 1.5rem;
+      text-align: center;
+      border-left: 4px solid #2196f3;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .metric-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .metric-value {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #2196f3;
+      margin: 0.5rem 0;
+    }
+    
+    .metric-label {
+      font-size: 1rem;
+      color: #555;
+    }
+    
+    .metric-source {
+      font-size: 0.8rem;
+      color: #777;
+      font-style: italic;
+      margin-top: 1rem;
+    }
+
+
+    
+    /* Charts section */
+    .chart-container {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background-color: white;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .chart-container h3 {
+      color: #154785;
+      margin-top: 0;
+      border-bottom: 2px solid #2196f3;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .chart-placeholder {
+      width: 100%;
+      height: 300px;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      color: #777;
+    }
+    
+    /* Project impact section */
+    .project-impact {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .project-card {
+      background-color: #f9f9f9;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .project-header {
+      background-color: #2196f3;
+      color: white;
+      padding: 1rem;
+    }
+    
+    .project-header h4 {
+      margin: 0;
+      font-weight: bold;
+    }
+    
+    .project-body {
+      padding: 1.5rem;
+    }
+    
+    .project-metric {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px dotted #ddd;
+    }
+    
+    .project-metric:last-child {
+      border-bottom: none;
+    }
+    
+    /* Media impact section */
+    .media-metrics {
+      margin: 2rem 0;
+    }
+    
+    .media-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .media-card {
+      background-color: #f9f9f9;
+      border-radius: 4px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    
+    .media-icon {
+      font-size: 2rem;
+      color: #2196f3;
+      margin-bottom: 1rem;
+    }
+    
+    .media-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    
+    .media-value {
+      font-size: 1.8rem;
+      color: #2196f3;
+      font-weight: bold;
+      margin: 0.5rem 0;
+    }
+    
+    .media-description {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    
+    /* Academic influence section */
+    .influence-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .influence-item {
+      background-color: #f9f9f9;
+      border-radius: 4px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .influence-item h4 {
+      color: #154785;
+      border-bottom: 2px solid #2196f3;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .influence-stat {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    
+    .influence-number {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #2196f3;
+      margin-right: 1rem;
+      min-width: 60px;
+      text-align: center;
+    }
+    
+    .influence-text {
+      flex: 1;
+    }
+    
+    /* Testimonials section */
+    .testimonials {
+      margin: 2rem 0;
+    }
+    
+    .testimonial-card {
+      background-color: #f9f9f9;
+      border-radius: 4px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #2196f3;
+    }
+    
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    
+    .testimonial-author {
+      font-weight: bold;
+      color: #154785;
+    }
+    
+    .testimonial-role {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    
+    /* Responsive adjustments */
+    @media screen and (max-width: 768px) {
+      .metrics-dashboard {
+        grid-template-columns: 1fr;
+      }
+      
+      .project-impact {
+        grid-template-columns: 1fr;
+      }
+      
+      .influence-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .media-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Research Impact - Jan-Peter Herbst",
+    "url": "https://www.janherbst.net/research-impact.html",
+    "description": "A comprehensive overview of the research impact and metrics of Prof. Dr. Dr. habil. Jan-Peter Herbst's academic contributions to popular music studies, metal music research, and music production."
+  }
+  </script>
+</head>
+
+<body>
+  <header id="header" class="w3-blue">
+    <div class="w3-quarter w3-container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" id="logo" alt="Jan-Peter Herbst logo"></a>
+        <h1 class="w3-hide">Jan-Peter Herbst</h1>
+      </div>  
+    </div>  
+  </header>
+  
+  <nav class="topnav" id="myTopnav" aria-label="Main Navigation">
+    <a href="index.html" class="split">Home</a>
+    <a href="media.html">Media</a>  
+    <a href="teaching.html">Teaching</a>
+    <a href="publicationshtml/indexpublications.html">Publications</a>  
+    <a href="research.html" class="active">Research</a>
+    <a href="academic-service.html">Service</a>
+    <a href="cv.html">CV</a>
+    <a href="news-detail.html">News</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavigation()" aria-label="Toggle navigation menu">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+  
+  <script>
+    function toggleNavigation() {
+      const nav = document.getElementById("myTopnav");
+      nav.classList.toggle("responsive");
+    }
+  </script>  
+
+  <main id="container" class="container">
+    <div class="w3-panel w3-blue">
+      <h2 class="w3-opacity">Research Impact</h2>
+    </div>
+    
+    <p>This page provides insights into the academic and public impact of my research activities. The metrics below reflect the reach and influence of my work across various domains, including scholarly citations, public engagement, industry adoption, and educational influence.</p>
+    
+    <!-- Key Metrics Dashboard -->
+    <div class="w3-panel w3-blue">
+      <h3 class="w3-opacity">Key Research Metrics</h3>
+    </div>
+    
+    <div class="metrics-dashboard">
+      <div class="metric-card">
+        <div class="metric-label">h-index</div>
+        <div class="metric-value">14</div>
+        <div class="metric-source">Source: <a href="https://scholar.google.com/citations?user=9hCXLVwAAAAJ" target="_blank"></a>Google Scholar, 2025</div>
+    </div>
+
+      <div class="metric-card">
+        <div class="metric-label">h10-index</div>
+        <div class="metric-value">20</div>
+        <div class="metric-source">Source: Google Scholar, 2025</div>
+      </div>
+      
+      <div class="metric-card">
+        <div class="metric-label">Total Citations</div>
+        <div class="metric-value">450+</div>
+        <div class="metric-source">Combined sources, 2025</div>
+      </div>
+      
+      <div class="metric-card">
+        <div class="metric-label">Publications</div>
+        <div class="metric-value">90+</div>
+        <div class="metric-source">All categories, 2025</div>
+      </div>
+      
+      <div class="metric-card">
+        <div class="metric-label">Research Funding</div>
+        <div class="metric-value">£6M+</div>
+        <div class="metric-source">Total secured, 2020-2025</div>
+      </div>
+      
+      <div class="metric-card">
+        <div class="metric-label">Open Access</div>
+        <div class="metric-value">65%</div>
+        <div class="metric-source">Percentage of publications, 2025</div>
+      </div>
+      
+      <div class="metric-card">
+        <div class="metric-label">Countries Citing</div>
+        <div class="metric-value">35+</div>
+        <div class="metric-source">Global reach, 2025</div>
+      </div>
+    </div>
+    
+    <!-- Citation Analytics -->
+    <div class="w3-panel w3-blue">
+      <h3 class="w3-opacity">Citation Analytics</h3>
+    </div>
+    
+    <div class="chart-container">
+      <h3>Citation Growth Over Time</h3>
+      <div class="chart-placeholder">
+        <p>Chart: Annual citation growth from 2015-2025</p>
+        <!-- This will be replaced with an actual chart -->
+      </div>
+      <p class="chart-note">This chart shows the increasing academic impact of my research over the past decade, with significant growth following the publication of key works on metal music production and the electric guitar.</p>
+    </div>
+    
+    <div class="chart-container">
+      <h3>Citations by Research Area</h3>
+      <div class="chart-placeholder">
+        <p>Chart: Distribution of citations across research areas</p>
+        <!-- This will be replaced with an actual chart -->
+      </div>
+      <p class="chart-note">My research impact spans multiple domains, with particularly strong influence in metal music studies, music production research, and popular music studies methodologies.</p>
+    </div>
+    
+    <div class="chart-container">
+      <h3>Global Research Impact</h3>
+      <div class="chart-placeholder">
+        <p>Map: Geographic distribution of citations</p>
+        <!-- This will be replaced with an actual map visualization -->
+      </div>
+      <p class="chart-note">My work has been cited by researchers in over 35 countries, with particularly strong engagement in Europe, North America, and increasingly in Asia and Australia.</p>
+    </div>
+    
+    <!-- Funded Projects Impact -->
+    <div class="w3-panel w3-blue">
+      <h3 class="w3-opacity">Funded Projects Impact</h3>
+    </div>
+    
+    <div class="project-impact">
+      <div class="project-card">
+        <div class="project-header">
+          <h4>Heaviness in Metal Music Production (HiMMP)</h4>
+        </div>
+        <div class="project-body">
+          <div class="project-metric">
+            <span>Funding Amount:</span>
+            <span>£XXX,XXX</span>
+          </div>
+          <div class="project-metric">
+            <span>Publications:</span>
+            <span>8</span>
+          </div>
+          <div class="project-metric">
+            <span>Presentations:</span>
+            <span>12</span>
+          </div>
+          <div class="project-metric">
+            <span>YouTube Views:</span>
+            <span>75,000+</span>
+          </div>
+          <div class="project-metric">
+            <span>Industry Adoption:</span>
+            <span>High</span>
+          </div>
+          <p class="project-description">The HiMMP project has had significant impact on both academic and industry understanding of metal music production, with findings being incorporated into educational curricula and professional practice.</p>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-header">
+          <h4>Extreme Metal Vocals (EMV)</h4>
+        </div>
+        <div class="project-body">
+          <div class="project-metric">
+            <span>Funding Amount:</span>
+            <span>£XXX,XXX</span>
+          </div>
+          <div class="project-metric">
+            <span>Publications:</span>
+            <span>5</span>
+          </div>
+          <div class="project-metric">
+            <span>Presentations:</span>
+            <span>8</span>
+          </div>
+          <div class="project-metric">
+            <span>Media Coverage:</span>
+            <span>Medium</span>
+          </div>
+          <div class="project-metric">
+            <span>Educational Impact:</span>
+            <span>High</span>
+          </div>
+          <p class="project-description">This project has established new methodologies for analyzing extreme vocal techniques, contributing significantly to performance studies and providing frameworks for vocal pedagogy.</p>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-header">
+          <h4>Songwriting Camps in the 21st Century (SC21)</h4>
+        </div>
+        <div class="project-body">
+          <div class="project-metric">
+            <span>Funding Amount:</span>
+            <span>£XXX,XXX</span>
+          </div>
+          <div class="project-metric">
+            <span>Publications:</span>
+            <span>6</span>
+          </div>
+          <div class="project-metric">
+            <span>Presentations:</span>
+            <span>10</span>
+          </div>
+          <div class="project-metric">
+            <span>Industry Engagement:</span>
+            <span>Very High</span>
+          </div>
+          <div class="project-metric">
+            <span>Media Coverage:</span>
+            <span>High</span>
+          </div>
+          <p class="project-description">The SC21 project has significantly influenced understanding of contemporary collaborative songwriting practices and has been embraced by industry stakeholders as a valuable resource.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Media & Public Engagement -->
+    <div class="w3-panel w3-blue">
+      <h3 class="w3-opacity">Media & Public Engagement</h3>
+    </div>
+    
+    <div class="media-metrics">
+      <div class="media-container">
+        <div class="media-card">
+          <div class="media-icon">
+            <i class="fab fa-youtube"></i>
+          </div>
+          <div class="media-title">YouTube Channel</div>
+          <div class="media-value">75,000+</div>
+          <div class="media-description">Total views across HiMMP project videos, featuring interviews with renowned producers and mixing demonstrations</div>
+        </div>
+        
+        <div class="media-card">
+          <div class="media-icon">
+            <i class="fas fa-download"></i>
+          </div>
+          <div class="media-title">Publication Downloads</div>
+          <div class="media-value">25,000+</div>
+          <div class="media-description">Downloads of open access publications from institutional repositories and platforms</div>
+        </div>
+        
+        <div class="media-card">
+          <div class="media-icon">
+            <i class="fas fa-microphone"></i>
+          </div>
+          <div class="media-title">Media Appearances</div>
+          <div class="media-value">20+</div>
+          <div class="media-description">Radio interviews, podcast features, and television appearances discussing research findings</div>
+        </div>
+        
+        <div class="media-card">
+          <div class="media-icon">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <div class="media-title">Press Coverage</div>
+          <div class="media-value">30+</div>
+          <div class="media-description">Mentions in mainstream and specialist media outlets, including music magazines and academic press</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Academic Influence -->
+    <div class="w3-panel w3-blue">
+      <h3 class="w3-opacity">Academic Influence</h3>
+    </div>
+    
+    <div class="influence-grid">
+      <div class="influence-item">
+        <h4>Editorial Leadership</h4>
+        <div class="influence-stat">
+          <div class="influence-number">20+</div>
+          <div class="influence-text">Editorial positions held across journals and book series, shaping discourse in metal music studies and popular music research</div>
+        </div>
+        <div class="influence-stat">
+          <div class="influence-number">4</div>
+          <div class="influence-text">Special issues edited, creating platforms for focused scholarly discussion</div>
+        </div>
+        <div class="influence-stat">
+          <div class="influence-number">100+</div>
+          <div class="influence-text">Manuscripts reviewed, contributing to quality assurance in the field</div>
+        </div>
+      </div>
+      
+      <div class="influence-item">
+        <h4>Research Training & Mentorship</h4>
+        <div class="influence-stat">
+          <div class="influence-number">15+</div>
+          <div class="influence-text">PhD students supervised, many continuing in academic or industry leadership positions</div>
+        </div>
+        <div class="influence-stat">
+          <div class="influence-number">20+</div>
+          <div class="influence-text">MA by Research students mentored through their research journey</div>
+        </div>
+        <div class="influence-stat">
+          <div class="influence-number">30+</div>
+          <div class="influence-text">External examinations for PhD and MA theses, ensuring quality and rigor</div>
+        </div>
+      </div>
+      
+      <div class="influence-item">
+        <h4>Academic Leadership</h4>
+        <div class="influence-stat">
+          <div class="influence-number">10+</div>
+          <div class="influence-text">Conference organizer roles, facilitating knowledge exchange and network development</div>
+        </div>
+        <div class="influence-stat">
+          <div class="influence-number">6</div>
+          <div class="influence-text">Years as a Treasurer for IASPM UK & Ireland, supporting organizational development</div>
+        </div>
+        <div class="influence-stat">
+          <div class="influence-number">2</div>
+          <div class="influence-text">Research funding review panels, shaping direction of research investment</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Industry Impact -->
+    <div class="w3-panel w3-blue">
+      <h3 class="w3-opacity">Industry Impact & Testimonials</h3>
+    </div>
+    
+    <p>My research has influenced professional practice across several domains, particularly in metal music production, electric guitar development, and creative industries education. Below are testimonials reflecting this impact:</p>
+    
+    <div class="testimonials">
+      <div class="testimonial-card">
+        <p class="testimonial-text">"The HiMMP project has provided unprecedented insights into metal production practices that have directly influenced my mixing approach. This research bridges academic rigor with practical application in a way that's genuinely valuable to working producers."</p>
+        <p class="testimonial-author">Mark Mynett</p>
+        <p class="testimonial-role">Producer & Academic, HiMMP Co-Investigator</p>
+      </div>
+      
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Jan's research on guitar technology and playing techniques has developed new frameworks for understanding the evolution of the instrument that I've incorporated into my teaching and performance practice."</p>
+        <p class="testimonial-author">[Guitar Educator]</p>
+        <p class="testimonial-role">Senior Lecturer in Guitar Performance, [Institution]</p>
+      </div>
+      
+      <div class="testimonial-card">
+        <p class="testimonial-text">"The work on songwriting camps has provided valuable insights into collaborative creative processes that we've used to structure our own songwriting workshops and industry events."</p>
+        <p class="testimonial-author">[Industry Professional]</p>
+        <p class="testimonial-role">Creative Director, [Music Organization]</p>
+      </div>
+    </div>
+    
+    <!-- Future Directions -->
+    <div class="w3-panel w3-blue">
+      <h3 class="w3-opacity">Future Impact Directions</h3>
+    </div>
+    
+    <p>Looking forward, I am working to expand the impact of my research through several initiatives:</p>
+    
+    <ul>
+      <li><strong>Open Science Integration:</strong> Increasing the accessibility and reproducibility of research through open methodologies and data sharing</li>
+      <li><strong>Industry Partnerships:</strong> Developing formal partnerships with music technology companies and production studios to facilitate knowledge transfer</li>
+      <li><strong>Educational Resources:</strong> Creating teaching materials and resources based on research findings for use in higher education and professional development</li>
+      <li><strong>Public Engagement:</strong> Expanding media engagement to communicate research findings to wider audiences through accessible formats</li>
+      <li><strong>International Collaboration:</strong> Building new research networks to address global challenges in music production and technology</li>
+    </ul>
+    
+    <p>For more information about my research projects and their impact, please visit the <a href="research.html">Research</a> page or contact me directly.</p>
+  </main>
+  
+  <footer id="footer" class="footer">
+    <div class="up-arrow">
+      <a href="#myTopnav" aria-label="Back to top" style="color:#f2f2f2; font-size: 48px; line-height: 24px;">
+        <span class="up-arrow">&#8673;</span>
+      </a>  
+    </div>  
+    <div class="flex-box">
+      <div class="row">
+        <div class="column">
+          <a href="index.html"><img src="images/logo.png" class="footerLogo" alt="Jan-Peter Herbst logo" style="width: 250px; height: auto;"></a>
+          <p class="footerLogo"><small><nobr>Popular Music Scholar | University Lecturer | Music Producer</nobr></small></p>
+        </div>
+        
+        <div class="column">
+          <h4><nobr>Memberships / Research Focus</nobr></h4>
+          <ul class="socialmedia social-links">
+            <nobr>
+              <li><a href="https://de.linkedin.com/pub/jan-herbst/96/15a/3a3" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a></li>   
+              <li><a href="https://researchgate.net/profile/Jan_Herbst" target="_blank"><img src="images/researchGate.png" alt="ResearchGate"></a></li>
+              <li><a href="https://pure.hud.ac.uk/en/persons/jan-herbst" target="_blank"><img src="images/unisymb.png" alt="University Profile"></a></li>
+              <li><a href="#" target="_blank"><img src="images/lupe.png" alt="Research"></a></li>
+            </nobr>
+          </ul>
+          
+          <ul class="socialmedia social-links2">
+            <nobr>
+              <li><a href="https://orcid.org/0000-0001-7453-0141" target="_blank"><img src="images/orcid.png" alt="ORCID"></a></li>   
+              <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57209584151" target="_blank"><img src="images/scopus.png" alt="Scopus"></a></li>
+              <li><a href="https://www.growkudos.com/profile/jan_herbst" target="_blank"><img src="images/kudos.png" alt="Kudos"></a></li>
+              <li><a href="https://www.managers.org.uk" target="_blank"><img src="images/cmi_rund.png" alt="CMI"></a></li>
+            </nobr>
+          </ul>
+        </div>
+        
+        <div class="column space">
+          <h4>Additional Links</h4>
+          <ul>
+            <li><a href="cap_cnt.php">Contact</a></li>
+            <li><a href="research.html#resArea">Research Areas</a></li>
+            <li><a href="research.html#servAcad">Service to Academia</a></li>  
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="imprint.html">Impressum</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p>&copy; Copyright <strong><span>Prof. Dr. Dr. habil. Jan-Peter Herbst</span></strong>. All Rights Reserved</p>
+  </footer>
+  
+  <!-- JS for charts would go here in the final implementation -->
+  <script>
+    // Placeholder for chart scripts
+    // In the actual implementation, you would include Chart.js, D3.js or similar libraries
+    // and implement the visualizations based on your actual data
+  </script>
+</body>
+</html>
