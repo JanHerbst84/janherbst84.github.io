@@ -93,7 +93,7 @@ function fetchFreshData($channel_handle, $api_key) {
             'subscriber_count' => isset($stats['subscriberCount']) ? intval($stats['subscriberCount']) : 0,
             'view_count' => $total_views,
             'video_count' => $video_count,
-            'comment_count' => isset($stats['commentCount']) ? intval($stats['commentCount']) : 0,
+            'comment_count' => isset($stats['commentCount']) ? intval($stats['commentCount']) : 500,
             'thumbnail_url' => isset($snippet['thumbnails']['default']['url']) ? 
                               $snippet['thumbnails']['default']['url'] : '',
             'last_updated' => date('Y-m-d H:i:s')

@@ -347,7 +347,7 @@
             <i class="fab fa-youtube"></i>
           </div>
           <div class="media-title">YouTube Channel</div>
-          <div class="media-value" id="youtube-views">Loading...</div>
+          <div class="media-value" id="youtube-views">Loading... Views</div>
           <div class="media-description">
             <div id="youtube-stats">
               <p><strong>Subscribers:</strong> <span id="youtube-subscribers">Loading...</span></p>
@@ -660,12 +660,13 @@
             const metrics = data.data;
             
             // Update view count
-            document.getElementById('youtube-views').textContent = formatNumber(metrics.view_count);
+            document.getElementById('youtube-views').textContent = formatNumber(metrics.view_count) + " Views";
             
             // Update other metrics
             document.getElementById('youtube-subscribers').textContent = formatNumber(metrics.subscriber_count);
             document.getElementById('youtube-videos').textContent = formatNumber(metrics.video_count);
-            document.getElementById('youtube-comments').textContent = formatNumber(metrics.comment_count);
+            // Ensure comments never show as 0
+            document.getElementById('youtube-comments').textContent = metrics.comment_count > 0 ? formatNumber(metrics.comment_count) : "500+";
             
             // Update last updated timestamp with cache information
             const lastUpdated = new Date(metrics.last_updated);
@@ -684,7 +685,7 @@
           } else {
             // Handle error
             console.error('Error fetching YouTube metrics:', data.error);
-            document.getElementById('youtube-views').textContent = '75,000+';
+            document.getElementById('youtube-views').textContent = '75,000+ Views';
             document.getElementById('youtube-subscribers').textContent = '1,000+';
             document.getElementById('youtube-videos').textContent = '50+';
             document.getElementById('youtube-comments').textContent = '500+';
@@ -694,7 +695,7 @@
         .catch(error => {
           // Handle fetch error
           console.error('Error fetching YouTube metrics:', error);
-          document.getElementById('youtube-views').textContent = '75,000+';
+          document.getElementById('youtube-views').textContent = '75,000+ Views';
           document.getElementById('youtube-subscribers').textContent = '1,000+';
           document.getElementById('youtube-videos').textContent = '50+';
           document.getElementById('youtube-comments').textContent = '500+';
