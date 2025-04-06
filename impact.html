@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   
   <title>Jan-Peter Herbst - Research Impact</title>
   <meta name="description" content="Explore the research impact and metrics of Prof. Dr. Dr. habil. Jan-Peter Herbst's work in popular music studies, metal music research, and music production.">
@@ -314,7 +315,7 @@
       <h2 class="w3-opacity">Research Impact</h2>
     </div>
     
-    <p>This page provides insights into the academic and public impact of my research activities. The metrics below reflect the reach and influence of my work across various domains, including scholarly citations, public engagement, industry adoption, and educational influence.</p>
+    <p>This page provides insights into the academic and public impact of my research activities. The metrics below reflect the reach and influence of my work across various domains, including scholarly citations, public engagement, and educational influence.</p>
     
     <!-- Key Metrics Dashboard -->
     <div class="w3-panel w3-blue">
@@ -325,19 +326,25 @@
       <div class="metric-card">
         <div class="metric-label">h-index</div>
         <div class="metric-value">14</div>
-        <div class="metric-source">Source: <a href="https://scholar.google.com/citations?user=9hCXLVwAAAAJ" target="_blank"></a>Google Scholar, 2025</div>
-    </div>
+        <div class="metric-source">Source: <a href="https://scholar.google.com/citations?user=9hCXLVwAAAAJ" target="_blank" title="View Jan-Peter Herbst's Google Scholar profile" style="font-size: inherit; font-weight: bold; color: #2196f3;">Google Scholar</a>, 2025</div>
+      </div>
 
       <div class="metric-card">
         <div class="metric-label">h10-index</div>
         <div class="metric-value">20</div>
-        <div class="metric-source">Source: Google Scholar, 2025</div>
+        <div class="metric-source">Source: <a href="https://scholar.google.com/citations?user=9hCXLVwAAAAJ" target="_blank" title="View Jan-Peter Herbst's Google Scholar profile" style="font-size: inherit; font-weight: bold; color: #2196f3;">Google Scholar</a>, 2025</div>
       </div>
       
       <div class="metric-card">
         <div class="metric-label">Total Citations</div>
-        <div class="metric-value">450+</div>
+        <div class="metric-value">500+</div>
         <div class="metric-source">Combined sources, 2025</div>
+      </div>
+      
+      <div class="metric-card">
+        <div class="metric-label">ResearchGate Score</div>
+        <div class="metric-value">Top 3%</div>
+        <div class="metric-source">Source: <a href="https://www.researchgate.net/profile/Jan-Herbst" target="_blank" title="View Jan-Peter Herbst's ResearchGate profile" style="font-size: inherit; font-weight: bold; color: #2196f3;">ResearchGate</a>, Musicology, 2025</div>
       </div>
       
       <div class="metric-card">
@@ -352,17 +359,6 @@
         <div class="metric-source">Total secured, 2020-2025</div>
       </div>
       
-      <div class="metric-card">
-        <div class="metric-label">Open Access</div>
-        <div class="metric-value">65%</div>
-        <div class="metric-source">Percentage of publications, 2025</div>
-      </div>
-      
-      <div class="metric-card">
-        <div class="metric-label">Countries Citing</div>
-        <div class="metric-value">35+</div>
-        <div class="metric-source">Global reach, 2025</div>
-      </div>
     </div>
     
     <!-- Citation Analytics -->
@@ -372,125 +368,12 @@
     
     <div class="chart-container">
       <h3>Citation Growth Over Time</h3>
-      <div class="chart-placeholder">
-        <p>Chart: Annual citation growth from 2015-2025</p>
-        <!-- This will be replaced with an actual chart -->
+      <div style="position: relative; height: 300px; width: 100%;">
+        <canvas id="citationChart"></canvas>
       </div>
-      <p class="chart-note">This chart shows the increasing academic impact of my research over the past decade, with significant growth following the publication of key works on metal music production and the electric guitar.</p>
+      <p class="chart-note">This chart shows the increasing academic impact of my research over the past decade, with significant growth following the publication of key works on metal music production and the electric guitar. <span style="font-size: 0.8rem; color: #777; font-style: italic;">Data as of April 6, 2025</span></p>
     </div>
-    
-    <div class="chart-container">
-      <h3>Citations by Research Area</h3>
-      <div class="chart-placeholder">
-        <p>Chart: Distribution of citations across research areas</p>
-        <!-- This will be replaced with an actual chart -->
-      </div>
-      <p class="chart-note">My research impact spans multiple domains, with particularly strong influence in metal music studies, music production research, and popular music studies methodologies.</p>
-    </div>
-    
-    <div class="chart-container">
-      <h3>Global Research Impact</h3>
-      <div class="chart-placeholder">
-        <p>Map: Geographic distribution of citations</p>
-        <!-- This will be replaced with an actual map visualization -->
-      </div>
-      <p class="chart-note">My work has been cited by researchers in over 35 countries, with particularly strong engagement in Europe, North America, and increasingly in Asia and Australia.</p>
-    </div>
-    
-    <!-- Funded Projects Impact -->
-    <div class="w3-panel w3-blue">
-      <h3 class="w3-opacity">Funded Projects Impact</h3>
-    </div>
-    
-    <div class="project-impact">
-      <div class="project-card">
-        <div class="project-header">
-          <h4>Heaviness in Metal Music Production (HiMMP)</h4>
-        </div>
-        <div class="project-body">
-          <div class="project-metric">
-            <span>Funding Amount:</span>
-            <span>£XXX,XXX</span>
-          </div>
-          <div class="project-metric">
-            <span>Publications:</span>
-            <span>8</span>
-          </div>
-          <div class="project-metric">
-            <span>Presentations:</span>
-            <span>12</span>
-          </div>
-          <div class="project-metric">
-            <span>YouTube Views:</span>
-            <span>75,000+</span>
-          </div>
-          <div class="project-metric">
-            <span>Industry Adoption:</span>
-            <span>High</span>
-          </div>
-          <p class="project-description">The HiMMP project has had significant impact on both academic and industry understanding of metal music production, with findings being incorporated into educational curricula and professional practice.</p>
-        </div>
-      </div>
-      
-      <div class="project-card">
-        <div class="project-header">
-          <h4>Extreme Metal Vocals (EMV)</h4>
-        </div>
-        <div class="project-body">
-          <div class="project-metric">
-            <span>Funding Amount:</span>
-            <span>£XXX,XXX</span>
-          </div>
-          <div class="project-metric">
-            <span>Publications:</span>
-            <span>5</span>
-          </div>
-          <div class="project-metric">
-            <span>Presentations:</span>
-            <span>8</span>
-          </div>
-          <div class="project-metric">
-            <span>Media Coverage:</span>
-            <span>Medium</span>
-          </div>
-          <div class="project-metric">
-            <span>Educational Impact:</span>
-            <span>High</span>
-          </div>
-          <p class="project-description">This project has established new methodologies for analyzing extreme vocal techniques, contributing significantly to performance studies and providing frameworks for vocal pedagogy.</p>
-        </div>
-      </div>
-      
-      <div class="project-card">
-        <div class="project-header">
-          <h4>Songwriting Camps in the 21st Century (SC21)</h4>
-        </div>
-        <div class="project-body">
-          <div class="project-metric">
-            <span>Funding Amount:</span>
-            <span>£XXX,XXX</span>
-          </div>
-          <div class="project-metric">
-            <span>Publications:</span>
-            <span>6</span>
-          </div>
-          <div class="project-metric">
-            <span>Presentations:</span>
-            <span>10</span>
-          </div>
-          <div class="project-metric">
-            <span>Industry Engagement:</span>
-            <span>Very High</span>
-          </div>
-          <div class="project-metric">
-            <span>Media Coverage:</span>
-            <span>High</span>
-          </div>
-          <p class="project-description">The SC21 project has significantly influenced understanding of contemporary collaborative songwriting practices and has been embraced by industry stakeholders as a valuable resource.</p>
-        </div>
-      </div>
-    </div>
-    
+            
     <!-- Media & Public Engagement -->
     <div class="w3-panel w3-blue">
       <h3 class="w3-opacity">Media & Public Engagement</h3>
@@ -498,13 +381,22 @@
     
     <div class="media-metrics">
       <div class="media-container">
-        <div class="media-card">
+        <div class="media-card" id="youtube-metrics-card">
           <div class="media-icon">
             <i class="fab fa-youtube"></i>
           </div>
           <div class="media-title">YouTube Channel</div>
-          <div class="media-value">75,000+</div>
-          <div class="media-description">Total views across HiMMP project videos, featuring interviews with renowned producers and mixing demonstrations</div>
+          <div class="media-value" id="youtube-views">Loading...</div>
+          <div class="media-description">
+            <div id="youtube-stats">
+              <p><strong>Subscribers:</strong> <span id="youtube-subscribers">Loading...</span></p>
+              <p><strong>Videos:</strong> <span id="youtube-videos">Loading...</span></p>
+              <p><strong>Comments:</strong> <span id="youtube-comments">Loading...</span></p>
+              <p><strong>Channel:</strong> <a href="https://www.youtube.com/@HiMMP-Research" target="_blank" style="font-size: inherit; font-weight: bold; color: #2196f3;">@HiMMP-Research</a></p>
+            </div>
+            <p id="youtube-description">Total views across HiMMP project videos, featuring interviews with renowned producers and mixing demonstrations</p>
+            <p style="font-size: 0.8rem; color: #777; font-style: italic; margin-top: 0.5rem;" id="youtube-last-updated"></p>
+          </div>
         </div>
         
         <div class="media-card">
@@ -530,7 +422,7 @@
             <i class="fas fa-newspaper"></i>
           </div>
           <div class="media-title">Press Coverage</div>
-          <div class="media-value">30+</div>
+          <div class="media-value">20+</div>
           <div class="media-description">Mentions in mainstream and specialist media outlets, including music magazines and academic press</div>
         </div>
       </div>
@@ -545,7 +437,7 @@
       <div class="influence-item">
         <h4>Editorial Leadership</h4>
         <div class="influence-stat">
-          <div class="influence-number">20+</div>
+          <div class="influence-number">5+</div>
           <div class="influence-text">Editorial positions held across journals and book series, shaping discourse in metal music studies and popular music research</div>
         </div>
         <div class="influence-stat">
@@ -553,8 +445,8 @@
           <div class="influence-text">Special issues edited, creating platforms for focused scholarly discussion</div>
         </div>
         <div class="influence-stat">
-          <div class="influence-number">100+</div>
-          <div class="influence-text">Manuscripts reviewed, contributing to quality assurance in the field</div>
+          <div class="influence-number">75+</div>
+          <div class="influence-text">Funding applications and manuscripts reviewed, contributing to quality assurance in the field</div>
         </div>
       </div>
       
@@ -578,62 +470,19 @@
         <h4>Academic Leadership</h4>
         <div class="influence-stat">
           <div class="influence-number">10+</div>
-          <div class="influence-text">Conference organizer roles, facilitating knowledge exchange and network development</div>
+          <div class="influence-text">Conference/symposium organizer roles, facilitating knowledge exchange and network development</div>
         </div>
         <div class="influence-stat">
           <div class="influence-number">6</div>
           <div class="influence-text">Years as a Treasurer for IASPM UK & Ireland, supporting organizational development</div>
         </div>
         <div class="influence-stat">
-          <div class="influence-number">2</div>
+          <div class="influence-number">3</div>
           <div class="influence-text">Research funding review panels, shaping direction of research investment</div>
         </div>
       </div>
     </div>
-    
-    <!-- Industry Impact -->
-    <div class="w3-panel w3-blue">
-      <h3 class="w3-opacity">Industry Impact & Testimonials</h3>
-    </div>
-    
-    <p>My research has influenced professional practice across several domains, particularly in metal music production, electric guitar development, and creative industries education. Below are testimonials reflecting this impact:</p>
-    
-    <div class="testimonials">
-      <div class="testimonial-card">
-        <p class="testimonial-text">"The HiMMP project has provided unprecedented insights into metal production practices that have directly influenced my mixing approach. This research bridges academic rigor with practical application in a way that's genuinely valuable to working producers."</p>
-        <p class="testimonial-author">Mark Mynett</p>
-        <p class="testimonial-role">Producer & Academic, HiMMP Co-Investigator</p>
-      </div>
-      
-      <div class="testimonial-card">
-        <p class="testimonial-text">"Jan's research on guitar technology and playing techniques has developed new frameworks for understanding the evolution of the instrument that I've incorporated into my teaching and performance practice."</p>
-        <p class="testimonial-author">[Guitar Educator]</p>
-        <p class="testimonial-role">Senior Lecturer in Guitar Performance, [Institution]</p>
-      </div>
-      
-      <div class="testimonial-card">
-        <p class="testimonial-text">"The work on songwriting camps has provided valuable insights into collaborative creative processes that we've used to structure our own songwriting workshops and industry events."</p>
-        <p class="testimonial-author">[Industry Professional]</p>
-        <p class="testimonial-role">Creative Director, [Music Organization]</p>
-      </div>
-    </div>
-    
-    <!-- Future Directions -->
-    <div class="w3-panel w3-blue">
-      <h3 class="w3-opacity">Future Impact Directions</h3>
-    </div>
-    
-    <p>Looking forward, I am working to expand the impact of my research through several initiatives:</p>
-    
-    <ul>
-      <li><strong>Open Science Integration:</strong> Increasing the accessibility and reproducibility of research through open methodologies and data sharing</li>
-      <li><strong>Industry Partnerships:</strong> Developing formal partnerships with music technology companies and production studios to facilitate knowledge transfer</li>
-      <li><strong>Educational Resources:</strong> Creating teaching materials and resources based on research findings for use in higher education and professional development</li>
-      <li><strong>Public Engagement:</strong> Expanding media engagement to communicate research findings to wider audiences through accessible formats</li>
-      <li><strong>International Collaboration:</strong> Building new research networks to address global challenges in music production and technology</li>
-    </ul>
-    
-    <p>For more information about my research projects and their impact, please visit the <a href="research.html">Research</a> page or contact me directly.</p>
+        
   </main>
   
   <footer id="footer" class="footer">
@@ -685,11 +534,211 @@
     <p>&copy; Copyright <strong><span>Prof. Dr. Dr. habil. Jan-Peter Herbst</span></strong>. All Rights Reserved</p>
   </footer>
   
-  <!-- JS for charts would go here in the final implementation -->
+  <!-- JS for charts and YouTube metrics implementation -->
   <script>
-    // Placeholder for chart scripts
-    // In the actual implementation, you would include Chart.js, D3.js or similar libraries
-    // and implement the visualizations based on your actual data
+    document.addEventListener('DOMContentLoaded', function() {
+      // Citation data from Google Scholar
+      const years = ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'];
+      const citations = [2, 4, 21, 13, 34, 29, 78, 91, 124, 87, 37];
+      
+      // Calculate cumulative citations
+      const cumulativeCitations = [];
+      let total = 0;
+      for (const count of citations) {
+        total += count;
+        cumulativeCitations.push(total);
+      }
+      
+      // Get the canvas element
+      const ctx = document.getElementById('citationChart').getContext('2d');
+      
+      // Create the chart
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: years,
+          datasets: [
+            {
+              label: 'Citations per Year',
+              data: citations,
+              backgroundColor: '#4285F4', // Google Scholar blue
+              borderColor: '#4285F4',
+              borderWidth: 1,
+              order: 2 // Display bars behind the line
+            },
+            {
+              label: 'Cumulative Citations',
+              data: cumulativeCitations,
+              type: 'line',
+              borderColor: '#34A853', // Google green
+              backgroundColor: 'rgba(52, 168, 83, 0.1)',
+              borderWidth: 2,
+              pointRadius: 4,
+              pointBackgroundColor: '#34A853',
+              fill: false,
+              yAxisID: 'y1', // Use secondary y-axis
+              order: 1 // Display line in front of bars
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              beginAtZero: true,
+              position: 'left',
+              grid: {
+                color: '#e0e0e0'
+              },
+              ticks: {
+                precision: 0,
+                font: {
+                  family: 'Arial, sans-serif'
+                }
+              },
+              title: {
+                display: true,
+                text: 'Citations per Year',
+                font: {
+                  family: 'Arial, sans-serif',
+                  size: 14
+                }
+              }
+            },
+            y1: {
+              beginAtZero: true,
+              position: 'right',
+              grid: {
+                drawOnChartArea: false // Only show grid lines for primary y-axis
+              },
+              ticks: {
+                precision: 0,
+                font: {
+                  family: 'Arial, sans-serif'
+                }
+              },
+              title: {
+                display: true,
+                text: 'Cumulative Citations',
+                font: {
+                  family: 'Arial, sans-serif',
+                  size: 14
+                }
+              }
+            },
+            x: {
+              grid: {
+                display: false
+              },
+              ticks: {
+                font: {
+                  family: 'Arial, sans-serif'
+                }
+              },
+              title: {
+                display: true,
+                text: 'Year',
+                font: {
+                  family: 'Arial, sans-serif',
+                  size: 14
+                }
+              }
+            }
+          },
+          plugins: {
+            legend: {
+              display: true,
+              position: 'top',
+              labels: {
+                font: {
+                  family: 'Arial, sans-serif'
+                }
+              }
+            },
+            tooltip: {
+              backgroundColor: 'rgba(0, 0, 0, 0.7)',
+              titleFont: {
+                family: 'Arial, sans-serif'
+              },
+              bodyFont: {
+                family: 'Arial, sans-serif'
+              },
+              callbacks: {
+                title: function(tooltipItems) {
+                  return tooltipItems[0].label;
+                },
+                label: function(context) {
+                  const label = context.dataset.label || '';
+                  const value = context.parsed.y;
+                  return `${label}: ${value}`;
+                }
+              }
+            }
+          }
+        }
+      });
+      
+      // Fetch YouTube metrics
+      fetchYouTubeMetrics();
+    });
+    
+    // Function to format numbers with commas
+    function formatNumber(num) {
+      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    
+    // Function to fetch YouTube metrics from the PHP script
+    function fetchYouTubeMetrics() {
+      fetch('youtube-metrics.php')
+        .then(response => response.json())
+        .then(data => {
+          if (data.success && data.data) {
+            // Update the YouTube metrics card with the data
+            const metrics = data.data;
+            
+            // Update view count
+            document.getElementById('youtube-views').textContent = formatNumber(metrics.view_count);
+            
+            // Update other metrics
+            document.getElementById('youtube-subscribers').textContent = formatNumber(metrics.subscriber_count);
+            document.getElementById('youtube-videos').textContent = formatNumber(metrics.video_count);
+            document.getElementById('youtube-comments').textContent = formatNumber(metrics.comment_count);
+            
+            // Update last updated timestamp with cache information
+            const lastUpdated = new Date(metrics.last_updated);
+            let updateText = `Data as of ${lastUpdated.toLocaleDateString()}`;
+            
+            // Add cache information if available
+            if (data.cached) {
+              const cacheAgeHours = Math.floor(data.cache_age / 3600);
+              const cacheAgeMinutes = Math.floor((data.cache_age % 3600) / 60);
+              updateText += ` (cached ${cacheAgeHours}h ${cacheAgeMinutes}m ago)`;
+            } else {
+              updateText += ' (freshly loaded)';
+            }
+            
+            document.getElementById('youtube-last-updated').textContent = updateText;
+          } else {
+            // Handle error
+            console.error('Error fetching YouTube metrics:', data.error);
+            document.getElementById('youtube-views').textContent = '75,000+';
+            document.getElementById('youtube-subscribers').textContent = '1,000+';
+            document.getElementById('youtube-videos').textContent = '50+';
+            document.getElementById('youtube-comments').textContent = '500+';
+            document.getElementById('youtube-last-updated').textContent = 'Data as of April 6, 2025';
+          }
+        })
+        .catch(error => {
+          // Handle fetch error
+          console.error('Error fetching YouTube metrics:', error);
+          document.getElementById('youtube-views').textContent = '75,000+';
+          document.getElementById('youtube-subscribers').textContent = '1,000+';
+          document.getElementById('youtube-videos').textContent = '50+';
+          document.getElementById('youtube-comments').textContent = '500+';
+          document.getElementById('youtube-last-updated').textContent = 'Data as of April 6, 2025';
+        });
+    }
   </script>
 </body>
 </html>
