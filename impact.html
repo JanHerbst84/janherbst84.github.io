@@ -524,7 +524,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       // Citation data from Google Scholar
       const years = ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'];
-      const citations = [2, 4, 21, 13, 34, 29, 78, 91, 125, 86, 42];
+      const citations = [2, 4, 21, 13, 34, 29, 78, 91, 125, 86, 49];
       
       // Calculate cumulative citations
       const cumulativeCitations = [];
@@ -708,21 +708,21 @@
           } else {
             // Handle error
             console.error('Error fetching YouTube metrics:', data.error);
-            document.getElementById('youtube-views').textContent = '75,000+ Views';
-            document.getElementById('youtube-subscribers').textContent = '1,000+';
+            document.getElementById('youtube-views').textContent = '95,000+ Views';
+            document.getElementById('youtube-subscribers').textContent = '2,000+';
             document.getElementById('youtube-videos').textContent = '50+';
             document.getElementById('youtube-comments').textContent = '500+';
-            document.getElementById('youtube-last-updated').textContent = 'Data as of April 6, 2025';
+            document.getElementById('youtube-last-updated').textContent = 'Data as of May 11, 2025';
           }
         })
         .catch(error => {
           // Handle fetch error
           console.error('Error fetching YouTube metrics:', error);
-          document.getElementById('youtube-views').textContent = '75,000+ Views';
-          document.getElementById('youtube-subscribers').textContent = '1,000+';
+          document.getElementById('youtube-views').textContent = '95,000+ Views';
+          document.getElementById('youtube-subscribers').textContent = '2,000+';
           document.getElementById('youtube-videos').textContent = '50+';
           document.getElementById('youtube-comments').textContent = '500+';
-          document.getElementById('youtube-last-updated').textContent = 'Data as of April 6, 2025';
+          document.getElementById('youtube-last-updated').textContent = 'Data as of May 11, 2025';
         });
     }
   </script>
