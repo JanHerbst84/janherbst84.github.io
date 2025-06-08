@@ -55,9 +55,11 @@
 }
 
 .video iframe {
+  width: 100%; /* Ensure it takes full width of its container */
   aspect-ratio: 16/9;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-small);
+  border: none; /* Replace frameborder="0" */
 }
 
 .video audio {
