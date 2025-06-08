@@ -57,7 +57,7 @@
   background-color: var(--white); /* White background for the card */
   border-radius: var(--border-radius); /* Uses existing 4px radius */
   box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Softer shadow */
-  padding: var(--spacing-large); /* Increased padding to 1.5rem */
+  padding: var(--spacing-large) var(--spacing-xl); /* 1.5rem top/bottom, 2rem left/right */
   margin-bottom: var(--spacing-large); /* Increased margin to 1.5rem */
   border: 1px solid #eeeeee; /* Add a very light grey border */
 }
