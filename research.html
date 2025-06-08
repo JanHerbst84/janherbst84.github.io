@@ -15,6 +15,7 @@
 	
 <link href="css/main.css" rel="stylesheet">
 <link href="css/researchtimeline.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,22 +93,8 @@ function myFunction() {
 </div>
 
 <div id="resTimeline">
-    <div class="timeline-container">
-        <canvas id="timelineCanvas" class="timeline-canvas" width="1200" height="600"></canvas>
-    </div>
-    
-    <div class="timeline-controls">
-        <button id="zoomIn">Zoom In</button>
-        <button id="zoomOut">Zoom Out</button>
-        <button id="panLeft">← Pan Left</button>
-        <button id="panRight">Pan Right →</button>
-        <button id="reset">Reset View</button>
-    </div>
-    
-    <div class="timeline-legend">
-        <h3>Legend</h3>
-        <div id="legendItems"></div>
-    </div>
+    <div id="interactiveTimeline" style="height: 600px; border: 1px solid lightgray;"></div>
+    <!-- Controls and legend might be re-added or handled by Vis.js options later if needed -->
 </div>
 
 <div class="w3-panel w3-blue">
@@ -252,6 +239,7 @@ document.addEventListener('DOMContentLoaded', setupAccordions);</script>
 		 <p>
         &copy; Copyright <strong><span>Prof. Dr. Dr. habil. Jan-Peter Herbst</span></strong>. All Rights Reserved </p>
 </footer>	
-<script src="js/researchtimeline.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-timeline-graph2d.min.js"></script>
+<script src="js/interactive_timeline.js"></script> <!-- Changed to new script -->
 </body>
 </html>
