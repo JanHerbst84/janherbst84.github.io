@@ -82,3 +82,7 @@ img.footer {
   margin-top: var(--spacing-medium);
   text-align: center;
 }
+
+.no-wrap-text {
+  white-space: nowrap;
+}
