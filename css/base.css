@@ -2,10 +2,11 @@
 body {
   font-family: var(--font-body);
   color: var(--text-color);
+  background-color: var(--background-lighter); /* Added new background color */
   font-size: var(--font-scale-medium);
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */ /* Removed to allow position:sticky to work correctly */
 }
 
 /* Ensure all images are responsive by default */

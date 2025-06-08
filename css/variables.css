@@ -6,10 +6,10 @@
   --primary-blue-dark: #1976d2;
   --secondary-blue: #154785;
   --secondary-blue-dark: #0D47A1;
-  --text-color: #444444;
+  --text-color: #333333; /* Updated text color */
   --text-light: #888888;
-  --background-light: #f2f2f2;
-  --background-lighter: #f9f9f9;
+  --background-light: #f2f2f2; /* Existing light background */
+  --background-lighter: #f9fafb; /* Updated very light warm grey for main background */
   --white: #ffffff;
   --border-color: #dddddd;
   
@@ -41,8 +41,8 @@
   --font-scale-xxxl: calc(1.5rem + 1.5vw);
   
   /* Font families */
-  --font-heading: 'Playfair Display', serif;
-  --font-body: 'Open Sans', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Source Sans Pro', sans-serif;
   
   /* Container widths - more responsive now */
   --container-width: min(60%, 1400px);
@@ -60,5 +60,4 @@
   --transition-standard: all 0.3s ease;
 }
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+/* Google Fonts are now linked directly in HTML files */

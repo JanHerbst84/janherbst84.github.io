@@ -4,7 +4,7 @@
 #container {
   width: var(--container-width);
   margin: 0 auto;
-  padding: clamp(var(--spacing-xl), 5vw, var(--spacing-xxxl)) var(--spacing-medium);
+  padding: clamp(var(--spacing-xl), 5vw, var(--spacing-xxxl)) var(--spacing-xl); /* Increased left/right padding */
 }
 
 /* Section spacing */
