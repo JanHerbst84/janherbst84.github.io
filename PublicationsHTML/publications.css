@@ -427,3 +427,49 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* === Article Link Buttons === */
+
+.article-links {
+  margin-top: 15px; /* Adds some space above the buttons */
+  display: flex;
+  gap: 10px; /* Creates space between the buttons */
+}
+
+.btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Primary button for the article link */
+.article-links .btn-primary {
+  background-color: #0056b3; /* A professional blue */
+  color: #f0f0f0 !important; /* Force override for high-contrast text */
+}
+
+.article-links .btn-primary:hover {
+  background-color: #004494; /* A darker blue for hover */
+  color: #f0f0f0 !important; /* Force override for high-contrast text */
+}
+
+/* Secondary button for the Kudos summary */
+.btn-secondary {
+  background-color: #f0f0f0; /* A light grey */
+  color: #0056b3 !important; /* Force override for blue text */
+  border: 2px solid #cccccc;
+}
+
+.btn-secondary:hover {
+  background-color: #e0e0e0; /* A slightly darker grey for hover */
+  border-color: #bbbbbb;
+  color: #004494 !important; /* Ensure hover color is also forced */
+}
