@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "authors": "(with Eric Smialek)",
             "title": "Towards an Analytical Methodology for Vocalist's Live Gestures in Extreme Metal.",
             "journal": "Samples, 22, pp. 1–26.",
-            "links": { "openAccess": "https://gfpm-samples.de/index.php/samples/article/view/341/310" },
+            "links": { "openAccess": "https://gfpm-samples.de/index.php/samples/article/view/341/324" },
             "type": "article",
             "topics": "Metal Studies,Performance & Live Music,Research Methods,Music Theory & Analysis",
             "keywords": "metal,live-performance,vocals,research-methods,music-analysis"
