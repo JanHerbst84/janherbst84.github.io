@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
   menuItems.forEach(item => {
     const href = item.getAttribute('href');
     if (href === currentPage) {
-      item.classList.add('active-menu');
+      item.classList.add('active-nav');
     } else if (currentPage === '' && href === 'indexpublications.html') {
       // Handle case when at the index page without filename in URL
-      item.classList.add('active-menu');
+      item.classList.add('active-nav');
     }
   });
 
