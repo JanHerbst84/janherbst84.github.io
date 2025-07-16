@@ -45,6 +45,18 @@ function getChannelVideos($channel_id, $api_key, $max_results = 50) {
     return json_decode($videos_response, true);
 }
 
+// Function to get video statistics (including comment counts)
+function getVideoStatistics($video_ids, $api_key) {
+    if (empty($video_ids)) {
+        return [];
+    }
+    
+    $video_ids_string = implode(',', $video_ids);
+    $stats_url = "https://www.googleapis.com/youtube/v3/videos?part=statistics&id=$video_ids_string&key=$api_key";
+    $stats_response = file_get_contents($stats_url);
+    return json_decode($stats_response, true);
+}
+
 // Function to fetch fresh data from YouTube API
 function fetchFreshData($channel_handle, $api_key) {
     $response = [
@@ -83,6 +95,29 @@ function fetchFreshData($channel_handle, $api_key) {
         $video_count = isset($channel_videos['pageInfo']['totalResults']) ? 
                       intval($channel_videos['pageInfo']['totalResults']) : 0;
         
+        // Calculate total comment count across all videos
+        $total_comment_count = 0;
+        if (isset($channel_videos['items']) && count($channel_videos['items']) > 0) {
+            // Extract video IDs
+            $video_ids = [];
+            foreach ($channel_videos['items'] as $video) {
+                if (isset($video['id']['videoId'])) {
+                    $video_ids[] = $video['id']['videoId'];
+                }
+            }
+            
+            // Get video statistics in batches (YouTube API allows up to 50 IDs per request)
+            $video_stats = getVideoStatistics($video_ids, $api_key);
+            
+            if (isset($video_stats['items'])) {
+                foreach ($video_stats['items'] as $video_stat) {
+                    if (isset($video_stat['statistics']['commentCount'])) {
+                        $total_comment_count += intval($video_stat['statistics']['commentCount']);
+                    }
+                }
+            }
+        }
+        
         // Format the data
         $response['success'] = true;
         $response['data'] = [
@@ -93,7 +128,7 @@ function fetchFreshData($channel_handle, $api_key) {
             'subscriber_count' => isset($stats['subscriberCount']) ? intval($stats['subscriberCount']) : 0,
             'view_count' => $total_views,
             'video_count' => $video_count,
-            'comment_count' => isset($stats['commentCount']) ? intval($stats['commentCount']) : 500,
+            'comment_count' => $total_comment_count,
             'thumbnail_url' => isset($snippet['thumbnails']['default']['url']) ? 
                               $snippet['thumbnails']['default']['url'] : '',
             'last_updated' => date('Y-m-d H:i:s')
