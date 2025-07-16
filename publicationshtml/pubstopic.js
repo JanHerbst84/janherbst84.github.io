@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "authors": "(with Eric Smialek)",
             "title": "Towards an Analytical Methodology for Vocalist's Live Gestures in Extreme Metal.",
             "journal": "Samples, 22, pp. 1–26.",
-            "links": { "openAccess": "https://gfpm-samples.de/index.php/samples/article/view/341/324" },
+            "links": { "read": "https://gfpm-samples.de/index.php/samples/article/view/341/324" },
             "type": "article",
             "topics": "Metal Studies,Performance & Live Music,Research Methods,Music Theory & Analysis",
             "keywords": "metal,live-performance,vocals,research-methods,music-analysis"
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "authors": "(with Michael Ahlers)",
             "title": "Songwriting Camps: Geschichte, Theorien und Forschungsansätze zur Fließband-Produktion von populärer Musik.",
             "journal": "~Vibes (journal of IASPM D-A-CH), 3.",
-            "links": { "openAccess": "https://vibes-theseries.org/songwriting-camps" },
+            "links": { "read": "https://vibes-theseries.org/songwriting-camps" },
             "type": "article",
             "topics": "Songwriting & Collaboration,Music Industry & Labor,Popular Music Studies",
             "keywords": "songwriting-camps,music-industry,collaboration,popular-music"
@@ -471,7 +471,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "authors": "",
             "title": "Metronomic Precision of 'Teutonic Metal': A Methodological Challenge for Rhythm and Performance Research.",
             "journal": "Samples, 18, pp. 1–27.",
-            "links": { "openAccess": "https://gfpm-samples.de/index.php/samples/article/view/202/196" },
+            "links": { "read": "https://gfpm-samples.de/index.php/samples/article/view/202/196" },
             "type": "article",
             "topics": "German Music & Teutonic Metal,Performance & Live Music,Research Methods",
             "keywords": "Teutonic-metal,performance,quantization,research-methods"
@@ -491,7 +491,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "authors": "",
             "title": "Sonic Signatures in Metal Music Production: Teutonic vs British vs American Sound.",
             "journal": "Samples, 18, pp. 1–26.",
-            "links": { "openAccess": "https://gfpm-samples.de/index.php/samples/article/view/201/195" },
+            "links": { "read": "https://gfpm-samples.de/index.php/samples/article/view/201/195" },
             "type": "article",
             "topics": "German Music & Teutonic Metal,Music Production,Distortion & Sound",
             "keywords": "Teutonic-metal,music-production,sonic-signature,sound-analysis"
@@ -627,7 +627,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "authors": "",
             "title": "Akkordstrukturen im verzerrten Rockgitarrenriff: Eine experimental-analytische Studie zur Auswirkung von physikalischen und psycho-akustischen Faktoren.",
             "journal": "Samples, 15, pp. 1–27.",
-            "links": { "openAccess": "https://gfpm-samples.de/index.php/samples/article/view/232/225" },
+            "links": { "read": "https://gfpm-samples.de/index.php/samples/article/view/232/225" },
             "type": "article",
             "topics": "Guitar & Virtuosity,Distortion & Sound,Music Psychology & Perception",
             "keywords": "guitar,distortion,psychoacoustics,chord-structures"
