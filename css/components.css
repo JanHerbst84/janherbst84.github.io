@@ -87,6 +87,12 @@
   color: var(--white);
 }
 
+/* Adjust font size and alignment for Welcome message */
+.hero-welcome {
+  font-size: 1.3em;
+  margin: var(--spacing-large) var(--spacing-medium) 0 var(--spacing-medium);
+}
+
 /* Alerts */
 .alert {
   padding: var(--spacing-medium);
