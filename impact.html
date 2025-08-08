@@ -13,6 +13,11 @@
   <meta name="keywords" content="research impact, citations, h-index, metrics, scholarly impact, research metrics, Jan-Peter Herbst">
   <link href="images/favicon.png" rel="shortcut icon">
   
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  
   <link href="css/main.css" rel="stylesheet">
   <!-- Additional CSS for Research Impact page -->
   <style>
@@ -251,7 +256,6 @@
   
   <nav class="topnav" id="myTopnav" aria-label="Main Navigation">
     <a href="index.html" class="split">Home</a>
-    <a href="media.html">Media</a>
     <a href="impact.html" class="active">Impact</a>
     <a href="teaching.html">Teaching</a>
     <a href="presentations.html">Presentations</a>
@@ -260,6 +264,7 @@
     <a href="academic-service.html">Service</a>
     <a href="cv.html">CV</a>
     <a href="news-detail.html">News</a>
+    <a href="cap_cnt.php">Contact</a>
     <a href="javascript:void(0);" class="icon" onclick="toggleNavigation()" aria-label="Toggle navigation menu">
       <i class="fa fa-bars"></i>
     </a>
@@ -287,13 +292,13 @@
     <div class="metrics-dashboard">
       <div class="metric-card">
         <div class="metric-label">h-index</div>
-        <div class="metric-value">15</div>
+        <div class="metric-value">16</div>
         <div class="metric-source">Source: <a href="https://scholar.google.com/citations?user=9hCXLVwAAAAJ" target="_blank" title="View Jan-Peter Herbst's Google Scholar profile" style="font-size: inherit; font-weight: bold; color: #2196f3;">Google Scholar</a>, 2025</div>
       </div>
 
       <div class="metric-card">
         <div class="metric-label">h10-index</div>
-        <div class="metric-value">22</div>
+        <div class="metric-value">24</div>
         <div class="metric-source">Source: <a href="https://scholar.google.com/citations?user=9hCXLVwAAAAJ" target="_blank" title="View Jan-Peter Herbst's Google Scholar profile" style="font-size: inherit; font-weight: bold; color: #2196f3;">Google Scholar</a>, 2025</div>
       </div>
       
@@ -305,7 +310,7 @@
       
       <div class="metric-card">
         <div class="metric-label">ResearchGate Score</div>
-        <div class="metric-value">Top 3%</div>
+        <div class="metric-value">Top 2%</div>
         <div class="metric-source">Source: <a href="https://www.researchgate.net/profile/Jan-Herbst" target="_blank" title="View Jan-Peter Herbst's ResearchGate profile" style="font-size: inherit; font-weight: bold; color: #2196f3;">ResearchGate</a>, Musicology, 2025</div>
       </div>
       
@@ -473,12 +478,7 @@
     
   </main>
   
-  <footer id="footer" class="footer">
-    <div class="up-arrow">
-      <a href="#myTopnav" aria-label="Back to top" style="color:#f2f2f2; font-size: 48px; line-height: 24px;">
-        <span class="up-arrow">&#8673;</span>
-      </a>  
-    </div>  
+<footer id="footer" class="footer">
     <div class="flex-box">
       <div class="row">
         <div class="column">
@@ -521,7 +521,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       // Citation data from Google Scholar
       const years = ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'];
-      const citations = [2, 5, 20, 13, 34, 31, 78, 92, 140, 94, 101];
+      const citations = [2, 4, 20, 13, 33, 37, 76, 99, 129, 101, 154];
       
       // Calculate cumulative citations
       const cumulativeCitations = [];
@@ -685,8 +685,8 @@
             // Update other metrics
             document.getElementById('youtube-subscribers').textContent = formatNumber(metrics.subscriber_count);
             document.getElementById('youtube-videos').textContent = formatNumber(metrics.video_count);
-            // Ensure comments never show as 0
-            document.getElementById('youtube-comments').textContent = metrics.comment_count > 0 ? formatNumber(metrics.comment_count) : "500+";
+            // Display actual comment count (may be 0 if no comments or comments disabled)
+            document.getElementById('youtube-comments').textContent = formatNumber(metrics.comment_count);
             
             // Update last updated timestamp with cache information
             const lastUpdated = new Date(metrics.last_updated);
@@ -705,21 +705,21 @@
           } else {
             // Handle error
             console.error('Error fetching YouTube metrics:', data.error);
-            document.getElementById('youtube-views').textContent = '95,000+ Views';
-            document.getElementById('youtube-subscribers').textContent = '2,000+';
-            document.getElementById('youtube-videos').textContent = '50+';
-            document.getElementById('youtube-comments').textContent = '500+';
-            document.getElementById('youtube-last-updated').textContent = 'Data as of May 11, 2025';
+            document.getElementById('youtube-views').textContent = '128,000+ Views';
+            document.getElementById('youtube-subscribers').textContent = '3,460+';
+            document.getElementById('youtube-videos').textContent = '51+';
+            document.getElementById('youtube-comments').textContent = 'Loading...';
+            document.getElementById('youtube-last-updated').textContent = 'Data as of July 16, 2025';
           }
         })
         .catch(error => {
           // Handle fetch error
           console.error('Error fetching YouTube metrics:', error);
-          document.getElementById('youtube-views').textContent = '95,000+ Views';
-          document.getElementById('youtube-subscribers').textContent = '2,000+';
-          document.getElementById('youtube-videos').textContent = '50+';
-          document.getElementById('youtube-comments').textContent = '500+';
-          document.getElementById('youtube-last-updated').textContent = 'Data as of May 11, 2025';
+          document.getElementById('youtube-views').textContent = '128,000+ Views';
+          document.getElementById('youtube-subscribers').textContent = '3,460+';
+          document.getElementById('youtube-videos').textContent = '51+';
+          document.getElementById('youtube-comments').textContent = 'Loading...';
+          document.getElementById('youtube-last-updated').textContent = 'Data as of July 16, 2025';
         });
     }
   </script>

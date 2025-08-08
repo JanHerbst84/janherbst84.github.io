@@ -15,6 +15,12 @@
 	
 <link href="css/main.css" rel="stylesheet">
 <link href="css/researchtimeline.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 	{
@@ -39,10 +45,9 @@
 </header>
 	
 
-<div class="topnav" id="myTopnav">
-  <a href="index.html" class="split">Home</a>
-  <a href="media.html">Media</a>
-  <a href="impact.html">Impact</a>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="split">Home</a>
+    <a href="impact.html">Impact</a>
   <a href="teaching.html">Teaching</a>
   <a href="presentations.html">Presentations</a>
   <a href="publicationshtml/indexpublications.html">Publications</a>
@@ -50,6 +55,7 @@
   <a href="academic-service.html">Service</a>
   <a href="cv.html">CV</a>
   <a href="news-detail.html">News</a>
+  <a href="cap_cnt.php">Contact</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
@@ -71,14 +77,37 @@ function myFunction() {
 	<div class="focus">
 	  <ul class="focus">
 		<li>&ensp;Popular music studies (especially rock and metal music studies)</li>
-		<li>&ensp;Music technology and production &amp; artificial intelligence</li>
+		<li>&ensp;Music technology and production & artificial intelligence</li>
 		<li>&ensp;Music industries studies (monetisation of music, blockchain technology/web 3, copyright)</li>
 		<li>&ensp;Creativity research (songwriting, production)</li>
-		<li>&ensp;Music analysis &amp; methodology (musicology, music theory, cultural studies, sound analysis, semiotics)</li>
-		<li>&ensp;History of popular music &amp; development of musical styles and genres</li>
+		<li>&ensp;Music analysis & methodology (musicology, music theory, cultural studies, sound analysis, semiotics)</li>
+		<li>&ensp;History of popular music & development of musical styles and genres</li>
 		<li>&ensp;Empirical musicology</li>
 		<li>&ensp;Music performance studies</li>
 	  </ul>
+	 </div>
+</div>
+
+<div class="w3-panel w3-blue">
+	 <h3 class="w3-opacity">My Research Approach</h3>
+	</div>
+	
+<div id="resArea">	
+	<div class="focus">
+	  <p>My research is built on a foundation of practical experience as a musician, producer, and educator, combined with my academic work in popular music and media studies. Based on my overarching approach in systematic musicology, I specialise in empirical research that draws on methodologies from the social sciences, psychology, and the natural sciences. I am well versed in both qualitative and quantitative methodologies and see great value in method and data triangulation.</p>
+	  <p>This rigorous, evidence-based approach is rare in my primary field of popular music studies, which is often defined by interpretive methods common in the humanities. My extensive experience with empirical methodologies is an asset in my mission to make popular music studies, particularly rock and metal music studies, a recognised area of study in the academy by applying the rigours of established disciplines to these fields. Ultimately, I aim to connect empirical rigour with my background as a music creator, performer, and producer, bridging the gap between the objective, empirical, and the subjective, creative.</p>
+	  <h4>Core Research Areas</h4>
+	  <p>Much of my work deliberately shifts the focus from the fan's perspective to that of the practitioner’s perspective and industry context. Currently, my research is concentrated in three main areas:</p>
+	  <ul>
+		<li><b>Creative Practice:</b> This includes playing popular music instruments (especially the electric guitar), producing music (especially rock and metal), and creative processes more generally.</li>
+		<li><b>Music Industries and Labour:</b> I examine entrepreneurism and the work realities of various music professions, from studio operators and record companies to songwriting arrangements such as writing camps. My work also explores music copyright, monetisation, and the role of music in Web 2.0 and Web 3.0 (blockchain).</li>
+		<li><b>Music Technologies:</b> This area covers instrument technologies (such as guitar amplifiers and digital signal processing) and wider socio-cultural practices (like the ‘gear acquisition syndrome’).</li>
+	  </ul>
+	  <p>However, I am always exploring new topics that spark my curiosity and open new avenues for research and public engagement.</p>
+	  <h4>Collaboration and Multidisciplinarity</h4>
+	  <p>Just as I believe in the strength of mixed-methods research, I believe the most robust and insightful results come from multidisciplinary collaboration. By bringing together different theoretical perspectives and empirical methods, we can build a more complete picture than any single discipline could achieve alone. Multidisciplinary teams, which I champion, can mitigate these limitations, with specialists collaborating from complementary disciplines. The results are more valuable and likely to reach a wider audience, a finding well-documented in creativity research and other fields. For this reason, I have gradually moved away from individual research towards team projects, often organised around externally funded research grants.</p>
+	  <h4>Open Research and Public Engagement</h4>
+	  <p>Making research accessible and useful is a core principle of my work. While societal impact may not always be the primary goal of every research project, I believe it is a researcher's responsibility to make their work as accessible as possible, engage with public and specialist audiences, and ensure it is practically useful for professionals. Ideally, this involves direct collaboration with individuals and companies outside the academy to benefit from their real-world experience and to create a two-way transfer of knowledge.</p>
 	 </div>
 </div>
 
@@ -87,51 +116,37 @@ function myFunction() {
 </div>
 
 <div id="resTimeline">
-    <div class="timeline-container">
-        <canvas id="timelineCanvas" class="timeline-canvas" width="1200" height="600"></canvas>
-    </div>
-    
-    <div class="timeline-controls">
-        <button id="zoomIn">Zoom In</button>
-        <button id="zoomOut">Zoom Out</button>
-        <button id="panLeft">← Pan Left</button>
-        <button id="panRight">Pan Right →</button>
-        <button id="reset">Reset View</button>
-    </div>
-    
-    <div class="timeline-legend">
-        <h3>Legend</h3>
-        <div id="legendItems"></div>
-    </div>
+    <div id="interactiveTimeline" style="height: 600px; border: 1px solid lightgray;"></div>
+    <!-- Controls and legend might be re-added or handled by Vis.js options later if needed -->
 </div>
 
 <div class="w3-panel w3-blue">
-	 <h3 class="w3-opacity">Research Areas</h3>
+	 <h3 class="w3-opacity">Research Projects</h3>
 </div>		
 
 <div id="resFund">
 </div><button class="accordion">Funded Projects</button>
 <div class="panel">
 <div class="resCont">
-  <h6>   <b>Songwriting Camps in the 21st Century (in collaboration with Prof Michael Ahlers, Lueneburg University, Germany &amp; Dr Simon Barber, Birmingham City University, UK) (2023-2026)</b>    </h6>
+  <h6 id="sc21">   <b>Songwriting Camps in the 21st Century (in collaboration with Prof Michael Ahlers, Lueneburg University, Germany & Dr Simon Barber, Birmingham City University, UK) (2023-2026)</b>    </h6>
 	  <p>This project (SC21) researches how collaborative songwriting takes place in songwriting camps. As the first study to focus on the UK and Germany, it investigates what forms of songwriting camps exist in the 21st century to understand the interests of convenors (publishers, record companies, individuals) and participating professionals. It investigates the collaborative creative processes and interplay of the different skill-sets of various roles (topliners, beatmakers, lyricists, producers, performers) and offers insights into the organisation of offline and online camps, legal factors, and the role of songwriting camps within the wider music industries. The investigation will uncover who convenes these events, for what purposes, and what is created and ultimately selected for release. Legal factors such as royalties, shares and splits will be considered as well as the power structures at play. Apart from the organisation of these camps, the research will investigate how the participants' personal, professional and cultural backgrounds influence their aims and actions. This includes an in-depth analysis of the collaborative creative work and the evaluation of the value of collaborative songwriting offline and online. Furthermore, the research will study how the industry uses the results of the camps in the short and medium term.  
 	  </p>
 	  <img src="images/logo-ahr.png" class="w3-clear" style="float:left; width:150px; height:auto;" alt="">
 	  <p class="w3-clear">The project is supported by the Arts and Humanities Research Council (AHRC) in the United Kingdom and the German Research Foundation (DFG) <a href="https://www.songwritingcamps.net" target="_blank"><em><b>(project website)</b></em></a> <a href="https://gtr.ukri.org/projects?ref=AH%2FX002276%2F1" target="_blank"><em><b>(funding website)</b></em></a><br><br></p>
 	  
-<h6>   <b>Extreme Metal Vocals: Musical Expression, Technique, and Cultural Meaning (in collaboration with Dr Eric Smialek, Huddersfield University, UK) (2022-2025)</b>    </h6>
+<h6 id="emv">   <b>Extreme Metal Vocals: Musical Expression, Technique, and Cultural Meaning (in collaboration with Dr Eric Smialek, Huddersfield University, UK) (2022-2025)</b>    </h6>
 	  <p>"At last! A book about heavy metal as music." This opening exclamation in Sheila Whiteley's preface to Andrew Cope's history of Black Sabbath (Cope 2010) laments a long-standing practice in popular music studies of under-emphasizing musical details. This project (EMV) remedies this gap with four articles that synthesize linguistic, acoustical, historical, and musicological studies of vocal techniques. The first will be a reception study of verbal descriptions of extreme metal vocals, taken from magazines and online reviews. From this chart of semantic relationships, the second article will use spectrograms to demonstrate patterns between the descriptors and musical aspects of extreme metal vocals that correlate to different time periods and genres. The third article applies these acoustical findings to study the rhetorical qualities of climactic song sections. Finally, the fourth article's kinetic approach uses motion-capture footage of vocalists to see how their movements communicate tension, anticipation, and climax without requiring participants to verbally articulate that information or consciously reflect on their actions. Ultimately, the project will offer unique insights into extreme metal's appeal and contribute to debates about musical meaning and its relationship to identity.
 	  </p>
 	  <img src="images/logo-epsrc.png" class="w3-clear" style="float:left; width:150px; height:auto;" alt="">
 	  <p class="w3-clear">The project is supported by the Engineering and Physical Sciences Research Council (EPSRC) in the United Kingdom <a href="https://gtr.ukri.org/projects?ref=EP%2FX02590X%2F1" target="_blank"><em><b>(funding website)</b></em></a><br><br></p>
 	  
-<h6>   <b>The Impact of Digitization and Online Spaces on Women's Electric Guitar Practice (in collaboration with Dr Gabrielle Kielich, Huddersfield University, UK) (2022-2024)</b>    </h6>
+<h6 id="weg">   <b>The Impact of Digitization and Online Spaces on Women's Electric Guitar Practice (in collaboration with Dr Gabrielle Kielich, Huddersfield University, UK) (2022-2024)</b>    </h6>
 	  <p>This two-year postdoctoral project will analyse the impact of online spaces on women's electric guitar practice and examine the factors that enable  and motivate women to become electric guitarists. Studies have shown that women have been inhibited from becoming electric guitarists due to a variety of sociocultural factors. However, these studies largely pre-dated the Internet and did not examine its role in related musical practices. The objectives of WEG are as follows: 1) To generate new data on women guitarists' online practices, with attention to different generations, and affordances of relevant platforms; 2) To generate new data about the specifically gendered nature of that engagement, both positive and negative; and 3) To generate new data on the changing discourses about guitars and women guitarists. The objectives will be achieved through three phases of research. The first will involve analysis of online guitar magazines to locate content related to women and their guitar practices and to establish what the discourses around them are. Next, the ER will utilize netnography to explore and analyse women's online activities related to electric guitar practice, such as watching tutorials, taking lessons, buying equipment, posting self-performance videos, and engaging in online forums. Third, the ER will conduct in-depth qualitative interviews with women electric guitarists from a wide age range and with different levels of experience. WEG will generate new knowledge that will be of interest to scholars across disciplines, will be relevant to the marketing departments of guitar manufacturers, and aims to encourage more women to become interested in the electric guitar and therefore play a role in consumer awareness. WEG will enhance the ER's career prospects by enabling a more developed intellectual profile, methodological expertise, four publications that will strengthen her publication record, and will foster a relevant, UK-based professional network.
 	  </p>
 	  <img src="images/logo-epsrc.png" class="w3-clear" style="float:left; width:150px; height:auto;" alt="">
 	  <p class="w3-clear">The project is supported by the Engineering and Physical Sciences Research Council (EPSRC) in the United Kingdom <a href="https://gtr.ukri.org/projects?ref=EP%2FX023052%2F1" target="_blank"><em><b>(funding website)</b></em></a><br><br></p>
 	  
- <h6>   <b>Heaviness in Metal Music Production (in collaboration with Dr Mark Mynett, Huddersfield University, UK) (2020-2024)</b>    </h6>
+ <h6 id="himmp">   <b>Heaviness in Metal Music Production (in collaboration with Dr Mark Mynett, Huddersfield University, UK) (2020-2024)</b>    </h6>
 	  <p>The project (HiMMP) sets out to explore heaviness as the metal genre's central quality feature. It will show how heaviness is created sonically on the record and also, how leading metal producers define it and as such process and control its constituent aspects when mixing recordings. Heaviness in metal music can be created in different ways so it will be studied how genre, composition and performance determine technical mixing requirements. Ultimately, it will be evaluated what impact technical requirements have on the producer's personal style, their aesthetic intentions and on genre conventions.</p>
 	  <img src="images/logo-ahr.png" class="w3-clear" style="float:left; width:150px; height:auto;" alt="">
 	  <p class="w3-clear">The project is supported by the Arts and Humanities Research Council (AHRC) in the United Kingdom <a href="https://www.himmp.net/" target="_blank"><em><b>(project website)</b></em></a> <a href="https://gtr.ukri.org/projects?ref=AH%2FT010991%2F1" target="_blank"><em><b>(funding website)</b></em></a><br><br>
@@ -141,7 +156,7 @@ function myFunction() {
 	</div>
 
 <div id="resCont">	
-<button class="accordion">Research Focus</button>
+<button class="accordion">Other Research Interests</button>
 <div class="panel">
 <div class="resCont">
   <h6>   <b>German Metal</b>    </h6>	
@@ -190,17 +205,33 @@ function setupAccordions() {
   }
 }
 
+function openAccordionFromHash() {
+  var hash = window.location.hash.substring(1);
+  if (hash) {
+    var element = document.getElementById(hash);
+    if (element) {
+      var accordionButton = element.closest('.panel').previousElementSibling;
+      if (accordionButton && accordionButton.classList.contains('accordion')) {
+        accordionButton.click();
+        setTimeout(function() {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 350);
+      }
+    }
+  }
+}
+
 // Run setup when page loads
-document.addEventListener('DOMContentLoaded', setupAccordions);</script>
+document.addEventListener('DOMContentLoaded', function() {
+  setupAccordions();
+  openAccordionFromHash();
+});
+</script>
 
 	
 </div>	<!-- End Container-->
 	
 <footer id="footer" class="footer">
-<div class="up-arrow">
-<a href="#myTopnav" style="color:#f2f2f2; font-size: 48px; line-height: 24px;">
-  <span class="up-arrow">&#8673;</span></a>  
-	 </div>	
  <div class="flex-box">
 	<div class="row">
     <div class="column">
@@ -247,6 +278,7 @@ document.addEventListener('DOMContentLoaded', setupAccordions);</script>
 		 <p>
         &copy; Copyright <strong><span>Prof. Dr. Dr. habil. Jan-Peter Herbst</span></strong>. All Rights Reserved </p>
 </footer>	
-<script src="js/researchtimeline.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-timeline-graph2d.min.js"></script>
+<script src="js/interactive_timeline.js"></script> <!-- Changed to new script -->
 </body>
 </html>

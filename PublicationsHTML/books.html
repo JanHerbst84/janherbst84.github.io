@@ -19,6 +19,11 @@
   <link href="../css/main.css" rel="stylesheet">
   <link href="publications.css" rel="stylesheet">
   
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
@@ -43,7 +48,6 @@
   
   <nav class="topnav" id="myTopnav" aria-label="Main Navigation">
     <a href="../index.html" class="split">Home</a>
-    <a href="../media.html">Media</a>
     <a href="../impact.html">Impact</a>
     <a href="../teaching.html">Teaching</a>
     <a href="../presentations.html">Presentations</a>
@@ -52,6 +56,7 @@
     <a href="../academic-service.html">Service</a>
     <a href="../cv.html">CV</a>
     <a href="../news-detail.html">News</a>
+    <a href="../cap_cnt.php">Contact</a>
     <a href="javascript:void(0);" class="icon" onclick="toggleNavigation()" aria-label="Toggle navigation menu">
       <i class="fa fa-bars"></i>
     </a>
@@ -64,6 +69,7 @@
 
     <nav class="publications-menu" aria-label="Publications categories">
       <a href="indexpublications.html" class="menu-item">Overview</a> |
+      <a href="pubstopic.html" class="menu-item">By Topic</a> |
       <a href="books.html" class="menu-item active-nav">Books</a> |
       <a href="articles.html" class="menu-item">Journal Articles</a> |
       <a href="chapters.html" class="menu-item">Book Chapters</a> |
@@ -76,6 +82,38 @@
       <h3>Published Books</h3>
       
       <div class="book-grid">
+
+        <div class="book-item">
+          <div class="book-image">
+            <img src="../images/bc_HiMMP1.jpg" alt="Heaviness in Metal Music Production Vol 1 Cover">
+          </div>
+          <div class="book-info">
+            <h4 class="book-title">Heaviness in Metal Music Production: How and Why It Works (Vol. 1)</h4>
+            <div class="book-authors">Jan-Peter Herbst & Mark Mynett</div>
+            <div class="book-publisher">London: Routledge</div>
+            <div class="book-year">2025</div>
+            <div class="book-links">
+              <a href="https://doi.org/10.4324/9781003325727" class="book-link" target="_blank">Open Access</a>
+              <a href="https://www.routledge.com/Heaviness-in-Metal-Music-Production-Volume-I-How-and-Why-it-Works/Herbst-Mynett/p/book/9781032346212" class="book-link" target="_blank">Publisher</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <div class="book-image">
+            <img src="../images/bc_HiMMP2.jpg" alt="Heaviness in Metal Music Production Vol 2 Cover">
+          </div>
+          <div class="book-info">
+            <h4 class="book-title">Heaviness in Metal Music Production: Learn From the Masters (Vol. 2)</h4>
+            <div class="book-authors">Jan-Peter Herbst & Mark Mynett</div>
+            <div class="book-publisher">London: Routledge</div>
+            <div class="book-year">2025</div>
+            <div class="book-links">
+              <a href="https://doi.org/10.4324/9781003564089" class="book-link" target="_blank">Open Access</a>
+              <a href="https://www.routledge.com/Heaviness-in-Metal-Music-Production-Volume-II-Learn-from-the-Masters/Herbst-Mynett/p/book/9781032915586" class="book-link" target="_blank">Publisher</a>
+            </div>
+          </div>
+        </div>
 
         <div class="book-item">
           <div class="book-image">
@@ -162,8 +200,8 @@
             <div class="book-publisher">University of Huddersfield Press</div>
             <div class="book-year">2021</div>
             <div class="book-links">
-              <a href="https://thegearacquisitionsyndrome.com/" class="book-link" target="_blank">Website</a>
               <a href="https://unipress.hud.ac.uk/plugins/books/27/" class="book-link" target="_blank">Open Access</a>
+              <a href="https://thegearacquisitionsyndrome.com/" class="book-link" target="_blank">Publisher</a>
             </div>
           </div>
         </div>
@@ -208,30 +246,14 @@
       <div class="book-grid">
         <div class="book-item">
           <div class="book-image">
-            <img src="../images/bc_HiMMP1.jpg" alt="Heaviness in Metal Music Production Vol 1 Cover">
+            <img src="../images/bc_songwriting_camps.jpg" alt="Songwriting Camps in the 21st Century Cover">
           </div>
           <div class="book-info">
-            <h4 class="book-title">Heaviness in Metal Music Production: How and Why It Works (Vol. 1)</h4>
-            <div class="book-authors">Jan-Peter Herbst & Mark Mynett</div>
+            <h4 class="book-title">Songwriting Camps in the 21st Century</h4>
+            <div class="book-authors">Jan-Peter Herbst</div>
             <div class="book-publisher">London: Routledge</div>
-            <div class="book-year">2025</div>
+            <div class="book-year">(in development)</div>
             <div class="book-links">
-              <a href="https://www.routledge.com/Heaviness-in-Metal-Music-Production-Volume-I-How-and-Why-it-Works/Herbst-Mynett/p/book/9781032346212" class="book-link" target="_blank">Publisher</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="book-item">
-          <div class="book-image">
-            <img src="../images/bc_HiMMP2.jpg" alt="Heaviness in Metal Music Production Vol 2 Cover">
-          </div>
-          <div class="book-info">
-            <h4 class="book-title">Heaviness in Metal Music Production: Learn From the Masters (Vol. 2)</h4>
-            <div class="book-authors">Jan-Peter Herbst & Mark Mynett</div>
-            <div class="book-publisher">London: Routledge</div>
-            <div class="book-year">2025</div>
-            <div class="book-links">
-              <a href="https://www.routledge.com/Heaviness-in-Metal-Music-Production-Volume-II-Learn-from-the-Masters/Herbst-Mynett/p/book/9781032915586" class="book-link" target="_blank">Publisher</a>
             </div>
           </div>
         </div>
@@ -300,11 +322,6 @@
   </main>
   
   <footer id="footer" class="footer">
-    <div class="up-arrow">
-      <a href="#myTopnav" aria-label="Scroll to top">
-        <span class="up-arrow">&#8673;</span>
-      </a>  
-    </div>  
     <div class="flex-box">
       <div class="row">
         <div class="column">

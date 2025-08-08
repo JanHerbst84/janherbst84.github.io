@@ -18,6 +18,11 @@
   <!-- Local CSS -->
   <link href="css/main.css" rel="stylesheet">
   
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  
   <!-- Schema -->
   <script type="application/ld+json">
     {
@@ -93,10 +98,9 @@
    </div>	
 </header>
 	
-<nav class="topnav" id="myTopnav" aria-label="Main Navigation">
-  <a href="index.html" class="split active">Home</a>
-  <a href="media.html">Media</a>
-  <a href="impact.html">Impact</a>
+  <nav class="topnav" id="myTopnav" aria-label="Main Navigation">
+    <a href="index.html" class="active split">Home</a>
+    <a href="impact.html">Impact</a>
   <a href="teaching.html">Teaching</a>
   <a href="presentations.html">Presentations</a>
   <a href="publicationshtml/indexpublications.html">Publications</a>
@@ -104,6 +108,7 @@
   <a href="academic-service.html">Service</a>
   <a href="cv.html">CV</a>
   <a href="news-detail.html">News</a>
+  <a href="cap_cnt.php">Contact</a>
   <a href="javascript:void(0);" class="icon" onclick="toggleNavigation()" aria-label="Toggle navigation menu">
     <i class="fa fa-bars"></i>
   </a>
@@ -123,11 +128,11 @@ function toggleNavigation() {
 </div>
 	
 <section id="hero" class="hero w3-container flex-box" aria-labelledby="hero-heading">
-  <h2 id="hero-heading" class="hero-welcome"><b>Welcome to the website of <em>Prof. Dr. Dr. habil. Jan Herbst</em></b></h2>
+  <h2 id="hero-heading" class="hero-welcome"><b>Welcome to the website of<br><em>Prof. Dr. Dr. habil. Jan Herbst</em></b></h2>
   <div class="hero-content">
     <img src="images/P3.png" alt="Photo of Jan-Peter Herbst" width="300" height="300">
     <div class="hero-text">
-      <p>I am a Professor of Music at the University of Huddersfield, with a distinguished career as a researcher, educator, and practitioner in music production and popular music studies. My work bridges academia and industry, exploring themes such as the interplay of creativity and technology, the cultural significance of music production, and the evolution of popular music genres, particularly rock and metal.</p>
+      <p>I am a Professor of Music at the University of Huddersfield, with a distinguished career as a researcher, educator, and practitioner in music production and popular music studies. My work bridges academia and industry, exploring the connection between creativity and technology, the cultural significance of music production, and the evolution of popular music genres, particularly rock and metal.</p>
       <p>With a portfolio that includes over 50 peer-reviewed publications, 10 books, and several funded research projects, I am dedicated to advancing the field through both theoretical and empirical insights and practical applications. My teaching philosophy centres on research-informed practice and fostering intellectual curiosity, equipping students with the analytical and technical skills and perspectives necessary for success in today's creative industries.</p>
       <p>This website offers an overview of my academic journey, publications, and ongoing projects. I invite you to explore my work and connect to collaborate on innovative ideas in research on music and sound.</p>
       <p><a href="https://pure.hud.ac.uk/en/persons/jan-herbst" target="_blank" rel="noopener noreferrer">(profile on university website)</a></p>
@@ -138,114 +143,68 @@ function toggleNavigation() {
   </div>
 </section>
 
+<section class="w3-container content" style="text-align: center;" aria-labelledby="contact-heading">
+  <div class="w3-panel w3-border-top w3-border-bottom w3-border-blue">
+    <h2 id="contact-heading" class="w3-text-blue" style="font-size: 20px;">Get in Touch</h2>
+  </div>
+  <p>I am always open to new collaborations and interesting projects. If you would like to get in touch, please feel free to contact me.</p>
+  <a href="cap_cnt.php" class="w3-button w3-blue w3-margin-top">Contact Me</a>
+</section>
+
 <section id="news-updates" aria-labelledby="news-heading">
   <div class="container">
-    <h2 id="news-heading">News</h2>
+    <h2 id="news-heading">Latest News</h2>
    
-    <article class="news-item">
-      <h3>Publications Update</h3>
-      <time datetime="2025-05-31">May 31, 2025</time>
-      <p>I'm pleased to update that in the last two weeks, two articles have been published. One, co-authored with Eric Smialek, analyses extreme metal vocalists' live moments, the other one, co-authored with Ruth Barratt-Peacock, explores the heaviness of ensemble singing in metal, including clean vocals. The first one is open access and can be accessed <a href="https://gfpm-samples.de/index.php/samples/article/view/341/310" target="_blank">here</a>, and the second one is available <a href="https://doi.org/10.1386/mms_00166_1" target="_blank">here</a>.</p>
+    <article class="news-item card">
+      <h3>Publication Update</h3>
+      <time datetime="2025-07-29">July 29, 2025</time>
+      <p>I'm incredibly pleased to announce that the main outputs of the HiMMP project, the two books, have just been made available open access ahead of the print book publication on 1 August 2025. If you're curious, you can access the two books – the research monograph and the companion volume with the original interviews and listening guide – here: <a href="https://doi.org/10.4324/9781003325727" target="_blank">Volume 1</a> and <a href="https://doi.org/10.4324/9781003564089" target="_blank">Volume 2</a>.</p>
       <a href="news-detail.html" class="read-more"><b>Read more about this and other updates</b></a>
     </article>
 
   </div>
 </section>
-	
+
 <section class="w3-container content" aria-labelledby="projects-heading">
   <div class="w3-panel w3-border-top w3-border-blue">
-    <h2 id="projects-heading" class="w3-text-blue" style="font-size: 20px;">Jan's current major, book-length projects:</h2>
+    <h2 id="projects-heading" class="w3-text-blue" style="font-size: 20px;">Major Research Projects</h2>
   </div>
 
-  <div class="w3-panel w3-leftbar w3-border-blue logosProjects">
+  <div class="logosProjects card">
     <img src="images/himmp.png" width="150" height="100" alt="HiMMP project logo">
     <div>
       <h3>Heaviness in Metal Music Production (HiMMP)</h3>
-      <p><em>A 4-year project funded by the Arts and Humanities Research Council (AHRC), 2020-2024 (with Dr Mark Mynett)</em></p>
-      <p>This project investigates the conceptual and sonic parameters of 'heaviness' in metal music production through empirical research with industry practitioners. Through methodical collaboration with eight renowned metal producers, HiMMP examines the sonic construction of heaviness, its conceptual definition among leading producers, and the technical methodologies employed in controlling its various dimensions during the mixing process. The research establishes an empirically grounded theoretical framework for understanding heaviness as both an aesthetic and technical phenomenon, contributing substantive insights to musicological discourse and professional production practice.
-      <a href="https://himmp.net/" target="_blank" rel="noopener noreferrer"><b><em>(project website)</em></b></a></p>
+      <p>A 4-year project investigating the conceptual and sonic parameters of 'heaviness' in metal music production through empirical research with industry practitioners. <a href="research.html#himmp"><b><em>Learn More</em></b></a></p>
     </div>
   </div>
 
-  <div class="w3-panel w3-leftbar w3-border-blue logosProjects">
+  <div class="logosProjects card">
     <img src="images/emv.png" width="150" height="100" alt="EMV project logo">
     <div>
-      <h3>Extreme Metal Vocals (EMV): Musical Expression, Technique, and Cultural Meaning</h3>
-      <p><em>A 3-year project funded by the European Research Council, 2022-2025 (with Dr Eric Smialek)</em></p>
-      <p>This research interrogates vocal techniques in extreme metal genres through a multidisciplinary methodological approach. The project integrates linguistic analysis, acoustic phonetics, historical contextualisation, and musicological frameworks to examine how transgressive aesthetics are musically articulated and culturally mediated. Through reception studies of descriptive terminology, spectrographic analysis of vocal performance, and computational music information retrieval, this investigation aims to elucidate the aesthetic principles, performative techniques, and sociocultural significance of extreme vocal practices. 
-      <a href="https://gtr.ukri.org/projects?ref=EP%2FX02590X%2F1" target="_blank" rel="noopener noreferrer"><em><b>(project website)</b></em></a></p>
+      <h3>Extreme Metal Vocals (EMV)</h3>
+      <p>A 3-year project that interrogates vocal techniques in extreme metal genres through a multidisciplinary methodological approach. <a href="research.html#emv"><b><em>Learn More</em></b></a></p>
     </div>
   </div>
 
-  <div class="w3-panel w3-leftbar w3-border-blue logosProjects">
+  <div class="logosProjects card">
     <img src="images/sc21.png" width="200" height="100" alt="SC21 project logo">
     <div>
       <h3>Songwriting Camps in the 21st Century (SC21)</h3>
-      <p><em>A 3-year project funded by the Arts and Humanities Research Council and the German Research Foundation, 2023-2026 (with Prof Michael Ahlers &#38; Dr Simon Barber)</em></p>
-      <p>This research project examines collaborative creative processes within contemporary songwriting camps across the United Kingdom and Germany. The project interrogates the functional dynamics between convenors and participants, the integration of diverse technical and creative competencies, and the organisational architectures songwriting environments. Through qualitative methodologies including semi-structured interviews and ethnographic observation, SC21 aims to formulate a comprehensive theoretical model of contemporary songwriting camps, contextualising their creative practices within broader social, economic, and technological frameworks.     
-      <a href="https://gtr.ukri.org/projects?ref=AH%2FX002276%2F1" target="_blank" rel="noopener noreferrer"><b><em>(project website)</em></b></a></p>
+      <p>A 3-year project that examines collaborative creative processes within contemporary songwriting camps across the United Kingdom and Germany. <a href="research.html#sc21"><b><em>Learn More</em></b></a></p>
     </div>
   </div>
 
-  <div class="w3-panel w3-leftbar w3-border-blue logosProjects">
+  <div class="logosProjects card">
     <img src="images/electricguitar.jpg" width="200" height="133" alt="Electric guitar project image">
     <div>
       <h3>The Impact of Online Spaces on Women's Electric Guitar Practice</h3>
-      <p><em>A 2-year project funded by the European Research Council, 2022-2024 (with Dr Gabrielle Kielich)</em></p>
-      <p>This research investigates the influence of digital environments on women's electric guitar performance practices, examining how virtual platforms facilitate new modes of exchange, community formation, and creative expression among women instrumentalists. Employing mixed methodologies including content analysis of digital guitar media, virtual ethnographic observation, and in-depth qualitative interviews with practitioners, the project examines gendered power dynamics, discursive formations, and emergent communities of practice within contemporary guitar culture.    
-      <a href="https://gtr.ukri.org/projects?ref=EP%2FX023052%2F1" target="_blank" rel="noopener noreferrer"><b><em>(project website)</em></b></a></p>
+      <p>A 2-year project that investigates the influence of digital environments on women's electric guitar performance practices. <a href="research.html#weg"><b><em>Learn More</em></b></a></p>
     </div>
   </div>
-	
-  <div class="w3-panel w3-border-top w3-border-blue">
-    <h2 class="w3-text-blue" style="font-size: 20px;">Jan's latest book publications:</h2>
-  </div>
-
-  <div class="w3-panel w3-leftbar w3-border-blue">
-    <p><em>(2024) Popular Music Songwriting as Cultural, Creative, and Economic Practice</em> (with Prof Michael Ahlers &amp; PD Dr Knut Holtsträter)<a href="https://www.waxmann.com/buecher/Lied-und-populaere-Kultur--Song-and-Popular-Culture-200051" target="_blank" rel="noopener noreferrer"><b><em>(website)</em></b></a></p>
-  </div>
-
-  <div class="w3-panel w3-leftbar w3-border-blue">
-    <p>(2024) <em>The Cambridge Companion to the Electric Guitar</em> (with Prof Steve Waksman) <a href="https://www.cambridge.org/core/books/cambridge-companion-to-the-electric-guitar/4772610E775C8082D5D96CD7AE95A557" target="_blank" rel="noopener noreferrer"><b><em>(website)</em></b></a></p>
-  </div>
-
-  <div class="w3-panel w3-leftbar w3-border-blue">
-    <p>(2023) <em>Rock Guitar Virtuosos: Advances in Electric Guitar Playing, Technology and Culture</em> (with Alexander Vallejo) <a href="https://www.cambridge.org/core/elements/abs/rock-guitar-virtuosos/0D40C7DF7198C027B276A85AD74B9E0D" target="_blank" rel="noopener noreferrer"><b><em>(website)</em></b></a></p>
-  </div>
-
-  <div class="w3-panel w3-leftbar w3-border-blue">
-    <p>(2023) <em>The Cambridge Companion to Metal Music</em> <a href="https://doi.org/10.1017/9781108991162" target="_blank" rel="noopener noreferrer"><em><b>(website)</b></em></a></p>
-  </div>
-
-  <div class="w3-panel w3-leftbar w3-border-blue">
-    <p>(2022) <em>Rammstein's "Germany": Pop - Politics - Provocations</em> (with Dr Kerstin Wilhelms et al.) <a href="https://link.springer.com/book/10.1007/978-3-662-64766-0" target="_blank" rel="noopener noreferrer"><em><b>(website)</b></em></a></p>
-  </div>
-	
-  <div class="w3-panel w3-leftbar w3-border-blue">
-    <p>(2021) <em>Gear Acquisition Syndrome: Consumption of Instruments and Technology in Popular Music</em> (with Dr Jonas Menze) <a href="https://thegearacquisitionsyndrome.com/" target="_blank" rel="noopener noreferrer"><em><b>(website)</b></em></a> <a href="https://unipress.hud.ac.uk/plugins/books/27/" target="_blank" rel="noopener noreferrer">(open access)</a></p>
-  </div>	
-	
-  <div class="w3-panel w3-border-top w3-border-blue">
-    <h2 class="w3-text-blue" style="font-size: 20px;">Jan's forthcoming book publications:</h2>
-  </div>
-	
-  <div class="w3-panel w3-leftbar w3-border-blue">
-    <p><em>Heaviness in Metal Music Production: How and Why It Works</em> (with Dr Mark Mynett)</p>
-  </div>
-	
-  <div class="w3-panel w3-leftbar w3-border-blue">
-    <p><em>Heaviness in Metal Music Production: Learn From the Masters</em> (with Dr Mark Mynett)</p>
-  </div>
-
 </section>
 </main>
 	
 <footer id="footer" class="footer">
-  <div class="up-arrow">
-    <a href="#myTopnav" aria-label="Scroll to top" style="color:#f2f2f2; font-size: 48px; line-height: 24px;">
-      <span class="up-arrow">&#8673;</span>
-    </a>  
-  </div>
  
   <div class="flex-box">
     <div class="row">

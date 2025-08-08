@@ -65,6 +65,10 @@
           <label for="message"></label>
           <textarea id="message" name="message" placeholder="Your message" style="height:200px" required></textarea>
           
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="honeypot" tabindex="-1" value="">
+          </div>
+
           <div class="captcha-container">
             <label for="captcha">Please enter the code shown below</label>
             <div class="captcha-image">

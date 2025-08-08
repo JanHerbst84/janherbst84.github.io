@@ -20,6 +20,12 @@ $error_fields = array();
 // Process form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     
+    // Check honeypot field
+    if (!empty($_POST['honeypot'])) {
+        // Bot detected, silently fail
+        exit;
+    }
+
     // Verify CAPTCHA
     if (!isset($_SESSION['captcha']) || !isset($_POST['captcha']) || 
         strtoupper($_POST['captcha']) !== $_SESSION['captcha']) {

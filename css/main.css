@@ -15,6 +15,7 @@
 @import 'home.css';
 @import 'research.css';
 @import 'publications.css';
+@import '../publicationshtml/topics.css';
 @import 'cv.css';
 @import 'contact.css';
 @import 'lectures.css';

@@ -48,17 +48,17 @@
 }
 
 .video {
-  width: calc(50% - var(--spacing-small));
+  width: calc(50% - var(--spacing-small)); /* This handles the two-column layout */
   min-width: 280px;
   flex-grow: 1;
-  margin-bottom: var(--spacing-medium);
+  /* margin-bottom is now handled by the .card class */
 }
 
 .video iframe {
   width: 100%; /* Ensure it takes full width of its container */
   aspect-ratio: 16/9;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow-small);
+  border-radius: var(--border-radius); /* Card will also have this, so it's fine */
+  /* box-shadow is now handled by the .card class */
   border: none; /* Replace frameborder="0" */
 }
 
