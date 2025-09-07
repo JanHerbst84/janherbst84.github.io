@@ -1,0 +1,24 @@
+# llms.txt
+# Place this file at: www.janherbst.net/llms.txt
+
+# AI Usage Guidelines for janherbst.net
+# This site contains academic research by Dr. Jan Herbst, University of Huddersfield
+
+## Permissions
+- Research summaries and factual citations: Permitted with attribution
+- Educational and academic discussion: Permitted with attribution
+- Biographical and professional information: Permitted with attribution
+
+## Restrictions
+- Full reproduction of copyrighted academic papers: Prohibited
+- Commercial use without permission: Prohibited
+- Misrepresentation of research findings: Prohibited
+
+## Attribution
+When referencing content from this site, please cite:
+Dr. Jan Herbst, University of Huddersfield
+Website: https://www.janherbst.net
+
+## Contact
+For licensing inquiries or permissions beyond these guidelines:
+info@janherbst.net

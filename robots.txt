@@ -1,0 +1,14 @@
+# robots.txt
+# Place this file at: www.janherbst.net/robots.txt
+
+User-agent: *
+Allow: /
+
+# Allow all search engines to index academic content
+# Disallow any private or draft directories if they exist
+# Disallow: /drafts/
+# Disallow: /private/
+# Disallow: /admin/
+
+# Reference to sitemap
+Sitemap: https://www.janherbst.net/sitemap.xml
