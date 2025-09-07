@@ -200,8 +200,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "year": "2025",
             "authors": "(with Mark Mynett)",
             "title": "Metal Music and the Aesthetics of Heaviness: Sonic, Structural, and Affective Perspectives.",
-            "journal": "Rock Music Studies (forthcoming).",
-            "links": {},
+            "journal": "Rock Music Studies.",
+            "links": { "read": "https://doi.org/10.1080/19401159.2025.2535100" },
             "type": "article",
             "topics": "Heaviness,Aesthetics & Creativity,Metal Studies,Music Production,Research Methods",
             "keywords": "heaviness,aesthetics,metal,music-production,qualitative-research,musical-expression"
@@ -669,9 +669,14 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             "year": "2025",
             "authors": "Jan-Peter Herbst & Mark Mynett",
-            "title": "Heaviness in Metal Music Production: How and Why It Works (Vol. 1)",
+            "title": "Heaviness in Metal Music Production, Volume I: How and Why It Works",
             "publisher": "London: Routledge",
-            "links": { "publisher": "https://www.routledge.com/Heaviness-in-Metal-Music-Production-Volume-I-How-and-Why-it-Works/Herbst-Mynett/p/book/9781032346212" },
+            "links": { 
+                "publisher": "https://www.routledge.com/Heaviness-in-Metal-Music-Production-Volume-I-How-and-Why-it-Works/Herbst-Mynett/p/book/9781032346212",
+                "website": "https://huddersfield.box.com/s/8gren2ma4kesvf5vwip2axzz1v8sawur",
+                "openAccess": "https://www.taylorfrancis.com/books/oa-doi/10.4324/9781003325727/heaviness-metal-music-production-jan-peter-herbst-mark-mynett",
+                "doi": "https://doi.org/10.4324/9781003325727"
+            },
             "type": "book",
             "topics": "Heaviness,Music Production,Metal Studies",
             "keywords": "heaviness,music-production,metal"
@@ -679,9 +684,13 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             "year": "2025",
             "authors": "Jan-Peter Herbst & Mark Mynett",
-            "title": "Heaviness in Metal Music Production: Learn From the Masters (Vol. 2)",
+            "title": "Heaviness in Metal Music Production, Volume II: Learn from the Masters",
             "publisher": "London: Routledge",
-            "links": { "publisher": "https://www.routledge.com/Heaviness-in-Metal-Music-Production-Volume-II-Learn-from-the-Masters/Herbst-Mynett/p/book/9781032915586" },
+            "links": { 
+                "publisher": "https://www.routledge.com/Heaviness-in-Metal-Music-Production-Volume-II-Learn-from-the-Masters/Herbst-Mynett/p/book/9781032915586",
+                "openAccess": "https://www.taylorfrancis.com/books/oa-doi/10.4324/9781003564089/heaviness-metal-music-production-jan-peter-herbst-mark-mynett",
+                "doi": "https://doi.org/10.4324/9781003564089"
+            },
             "type": "book",
             "topics": "Heaviness,Music Production,Metal Studies",
             "keywords": "heaviness,music-production,metal"
